@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>Admin Panel - IDN CANTEEN</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#e2e7ff","on-primary-container":"#eeefff","background":"#faf8ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-secondary-fixed":"#001c39","on-tertiary-fixed":"#261a00","on-surface-variant":"#434655","on-secondary-fixed-variant":"#004883","on-tertiary-fixed-variant":"#5c4300","outline":"#737686","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","on-secondary-container":"#003c70","on-surface":"#131b2e","surface":"#faf8ff","tertiary":"#6d5000","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#dae2fd","on-secondary":"#ffffff","surface-variant":"#dae2fd","surface-container":"#eaedff","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#f9bd22","on-tertiary":"#ffffff","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-tertiary-container":"#ffeed3","surface-bright":"#faf8ff","surface-container-low":"#f2f3ff","on-primary":"#ffffff","secondary":"#0060ac","primary":"#004ac6","inverse-primary":"#b4c5ff","error-container":"#ffdad6","surface-tint":"#0053db","outline-variant":"#c3c6d7","tertiary-fixed":"#ffdf9f","on-background":"#131b2e","secondary-container":"#64a8fe","secondary-fixed":"#d4e3ff","secondary-fixed-dim":"#a4c9ff","inverse-surface":"#283044","on-error":"#ffffff","tertiary-container":"#8b6700","inverse-on-surface":"#eef0ff","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","gutter":"1rem","margin":"1rem","margin-desktop":"3rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-tablet":"2rem","space-lg":"1.5rem","space-md":"1rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-lg mb-space-lg flex items-center gap-space-sm"><img alt="IDN Canteen Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDFkpO3DmfbcOQPHj7slCBbjZ1q0H0gUncHJuqneL1h_Qt5TOmNJnY8t_1AQGVNlxBZXFp7Dr94FkF0XrmqQGV8SEHjogrBBKCYplhG_M4-ci3KJkbkaHpO0lcSeJWDB1uBRMJ8YNxaKbMY9YCUqG6w3heYFBe9OkW8j6K47EcDqO2xiRVQXKYcao2nr4XFhSO-kVJ4El9_c6PwSGQCTjJQRkmUtbHsFWCial2ZdHXf"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">IDN CANTEEN</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Staff Portal</span></div></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="admin-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kelola-menu" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-lg text-label-lg">Kelola Menu</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="antrean-pesanan" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-lg text-label-lg">Antrean Pesanan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laporan-penjualan" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-lg text-label-lg">Laporan Kas</span></a></nav><div class="px-space-md pt-space-md"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="font-label-lg text-label-lg">Toko Siswa</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant">POS &amp; Manajemen Kantin Sekolah</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Kasir Aktif</span></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARFDhdDCYT8OYSnZtJZwonmRL16oy0lieat-EBhGL6N2glDnLpTjCf5ACCBmcPArV3CNAsKJMQIJc-OczNRWiTto_hjpMX3lxZwLr0IWuUSQP99jo1g5zl_iZkAg0DWHnCk4PkN2nbVK0u3gOrXEigJ6vaNGsqxUw5-xFBDpcauH8ulm1XPSn2SR2AcNFEMz2FCNZRgrcY372WjHl4crba_k4l14IoVRqilqlxAKM"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Admin Kantin</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Staff Utama</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)] p-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header Section with Tactical Operational Controls -->
+<section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)]">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-primary">Operasional Real-Time</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Periode Semester Ganjil 2024</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Admin Dashboard Kantin</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Halo Pak Pengelola, Kantin sedang aktif &amp; menerima pesanan istirahat siang.
+      </p>
+</div>
+<!-- Live Canteen Open/Closed Status Pod -->
+<div class="flex items-center gap-space-md self-stretch sm:self-auto bg-surface-container-low p-2 px-space-md rounded-xl">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Layanan Gerai</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold" id="status-label-text">BUKA (Menerima Pesanan)</span>
+</div>
+<button class="group flex items-center gap-2 px-space-md py-2.5 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all active:scale-[0.98]" id="toggle-canteen-btn" onclick="toggleCanteenStatus()" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span id="toggle-btn-label">Status Kantin: BUKA</span>
+<span class="material-symbols-outlined text-[18px]">cached</span>
+</button>
+</div>
+</section>
+<!-- Key Metrics Bento Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Pesanan Hari Ini -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Pesanan Hari Ini</span>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">shopping_cart</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface">48</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">Pesanan</span>
+</div>
+<div class="mt-3 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-semibold">+12%</span>
+<span class="text-on-surface-variant font-normal">dari kemarin (42 pesanan)</span>
+</div>
+</div>
+<!-- KPI 2: Pendapatan -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pendapatan Bruto</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-tertiary-fixed text-on-tertiary-fixed">Simulasi Data</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline">
+<span class="font-headline-xl text-headline-xl text-on-surface">Rp 384.000</span>
+</div>
+<div class="mt-3 flex items-center gap-2">
+<!-- Micro sparkline visualization -->
+<svg class="w-20 h-5 text-secondary overflow-visible" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+<path d="M 2 16 L 16 12 L 30 14 L 44 8 L 58 10 L 76 2"></path>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rata-rata: Rp 8.000 / transaksi</span>
+</div>
+</div>
+<!-- KPI 3: Total Produk Katalog -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Katalog Terdaftar</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface">23</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">Produk</span>
+</div>
+<div class="mt-3 flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed">13 Makanan</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed">10 Minuman</span>
+</div>
+</div>
+<!-- KPI 4: Antrean Menunggu -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pesanan Menunggu</span>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+</div>
+<div class="mt-4 flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-error">4</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">Antrean</span>
+</div>
+<div class="mt-3 flex items-center gap-1.5 text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span class="font-semibold">Perlu diproses segera</span>
+<span class="text-on-surface-variant font-normal">sebelum bel istirahat</span>
+</div>
+</div>
+</section>
+<!-- Live Order Queue Module (Priority Break-time Processing) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] overflow-hidden">
+<div class="p-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-secondary-container animate-ping"></div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Antrean Pesanan Siswa Terbaru</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">8 pesanan aktif pada periode istirahat pertama (10:15 - 10:45 WIB)</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-primary font-semibold shadow-sm">4 Menunggu • 3 Diproses • 1 Siap</span>
+</div>
+</div>
+<!-- Live Order Queue Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<tr>
+<th class="py-3 px-space-md">Order ID</th>
+<th class="py-3 px-space-md">Nama Siswa &amp; Kelas</th>
+<th class="py-3 px-space-md">Rincian Produk</th>
+<th class="py-3 px-space-md">Waktu Pesan</th>
+<th class="py-3 px-space-md">Status Alur</th>
+<th class="py-3 px-space-md text-right">Aksi Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-md font-body-md">
+<!-- Sample Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md font-semibold text-primary font-label-lg">
+              #IDN-8842
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Fahri Ramadhan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">XI RPL 1 (Kartu Santri: 2023-019)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">1x Chitato Lite</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">1x Teh Pucuk</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-on-surface">10:15 WIB</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">3 mnt lalu</div>
+</td>
+<td class="py-3.5 px-space-md">
+<select class="bg-surface-container px-3 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-secondary focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="menunggu">Menunggu</option>
+<option selected="" value="diproses">Diproses</option>
+<option value="siap">Siap Diambil</option>
+<option value="selesai">Selesai</option>
+</select>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+                Update Status
+              </button>
+</td>
+</tr>
+<!-- Sample Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md font-semibold text-primary font-label-lg">
+              #IDN-8843
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Ahmad Dimas</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">X TKJ 2 (Kartu Santri: 2024-082)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">1x Pop Mie Goreng</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">1x Milku Cokelat</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-on-surface">10:17 WIB</div>
+<div class="font-body-sm text-body-sm text-error">Menunggu (Segera)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<select class="bg-surface-container px-3 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-error focus:outline-none focus:ring-2 focus:ring-primary">
+<option selected="" value="menunggu">Menunggu</option>
+<option value="diproses">Diproses</option>
+<option value="siap">Siap Diambil</option>
+<option value="selesai">Selesai</option>
+</select>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">
+                Update Status
+              </button>
+</td>
+</tr>
+<!-- Sample Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md font-semibold text-primary font-label-lg">
+              #IDN-8840
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-lg text-label-lg text-on-surface">Zaki Al-Faruq</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">XII DMM 1 (Kartu Santri: 2022-041)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">2x Roti AOKA</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">1x Air Le Minerale</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-label-md text-label-md text-on-surface">10:10 WIB</div>
+<div class="font-body-sm text-body-sm text-secondary">Siap di Meja Ambil</div>
+</td>
+<td class="py-3.5 px-space-md">
+<select class="bg-surface-container px-3 py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-secondary-fixed-variant focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="menunggu">Menunggu</option>
+<option value="diproses">Diproses</option>
+<option selected="" value="siap">Siap Diambil</option>
+<option value="selesai">Selesai</option>
+</select>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+                Selesaikan
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Comprehensive Product Management Module -->
+<section class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)] p-space-lg flex flex-col gap-space-lg">
+<!-- Header Title & Management Description -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-high">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Manajemen Katalog &amp; Harga IDN Canteen</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Perbarui nominal harga jual siswa, pantau stok fisik kasir, dan atur ketersediaan produk per gerai.
+        </p>
+</div>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed px-3 py-1 rounded-full self-start sm:self-auto">
+        23 Total Produk Terdaftar
+      </span>
+</div>
+<!-- Action Toolbar (Filters, Search & Fast Buttons) -->
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search and Filter Bar -->
+<div class="flex flex-1 flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low text-on-surface pl-10 pr-4 py-2.5 rounded-xl font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all placeholder:text-on-surface-variant" placeholder="Cari produk (contoh: Chocolatos, Pocari, Aoka)..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs">
+<select class="bg-surface-container-low text-on-surface-variant px-3 py-2.5 rounded-xl font-label-md text-label-md focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="all">Semua Kategori</option>
+<option value="makanan">Makanan (13)</option>
+<option value="minuman">Minuman (10)</option>
+</select>
+<select class="bg-surface-container-low text-on-surface-variant px-3 py-2.5 rounded-xl font-label-md text-label-md focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="all">Semua Status Stok</option>
+<option value="tersedia">Tersedia</option>
+<option value="menipis">Stok Tipis (&lt; 20)</option>
+<option value="habis">Habis</option>
+</select>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 bg-surface-container-high text-primary hover:bg-primary-fixed transition-colors rounded-xl font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">price_change</span>
+          Update Harga Massal
+        </button>
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors rounded-xl font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+          Export Laporan
+        </button>
+<button class="flex items-center gap-1.5 px-4 py-2.5 bg-primary-container text-on-primary hover:opacity-95 transition-opacity rounded-xl font-label-lg text-label-lg font-semibold shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          + Tambah Produk Baru
+        </button>
+</div>
+</div>
+<!-- Product Management Table -->
+<div class="w-full overflow-x-auto rounded-xl bg-surface-container-low/40">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<tr>
+<th class="py-3 px-space-md w-10">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</th>
+<th class="py-3 px-space-md">Gambar &amp; Nama Produk</th>
+<th class="py-3 px-space-md">Kategori</th>
+<th class="py-3 px-space-md">Harga Satuan (IDR)</th>
+<th class="py-3 px-space-md">Stok Fisik</th>
+<th class="py-3 px-space-md">Status Ketersediaan</th>
+<th class="py-3 px-space-md text-right">Aksi Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-md font-body-md">
+<!-- Row 1: Bang Bang -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Packaged Indonesian chocolate wafer snack Bang Bang on a bright clean studio background with natural ambient lighting, soft shadows, vibrant commercial product photography styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOASwqbHhP4vvKNHaIKSyAq5lJwaLpIVj3q9utwLZ48OpNpoHWjD9C4ffbn4mZPWCNxCGip31PisaoIkgBV91BQMQCVw4OV0tVk4YHcmY6d0WCI-OItMxQFUz43UXvX3xK0eYbtG5sZR83PZ4_I7m8_NABwLggHS2C3JAbr3cXSYptmTr1ro8HJu2wND8EoMhFElyO42wab_IwXJMYT6fLp35DfPvyOnXPq6ThYl4"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Bang Bang</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wafer Roll Cokelat Karamel</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Makanan</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">35</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+<button class="px-2.5 py-1 rounded-md text-error bg-error-container hover:bg-error hover:text-on-error font-label-sm text-label-sm transition-colors" type="button">Hapus</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Chocolatos -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Packaged Italian chocolate wafer stick Chocolatos displayed neatly on crisp white clean background with soft bright lighting, commercial high key food photo." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA296mCAOgMxW6suDL6npy1sykjucxyu555qaPnnsyTS7b-FNghHbvjCCCxq4TiyA1OX67ll3BmAL1hzsEoX2gvDH8F-mqxeSXLexW7IGyEj4JOnecmriMB3ZfXnoCqRpDACwIOFsbwaCwiR2GHKDFQZIz3ZlPKwSt7N8GqdLwo9z4THpReBYjR2qjdu1QBxy2OTAlV9lkJAQzaEMHxMFtIdqWq5RdM3pEk_HgJpjU"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Chocolatos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wafer Roll Italian Sweet</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Makanan</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">50</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Chitato Lite Seaweed -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Packaged Chitato Lite Seaweed potato chips snack pouch against a minimalist pastel modern studio backdrop, crisp studio product packaging shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPSYxnThLrn9bzwcvi1yjOyZI3ia5-Ikry9wAzZCko_04yBg8qfEipLnVZLWN8evKhQNO0QShQyn88WfDyUUqgm22JQa9U4m2Qx0SnpyPMcC-mEaficpJeXssOt1vH0Lsi7tOnbh5Wmc9jG4h1lrqeqm29IdOaBxhuBrv8mXPjaXQKIsP-gb1K2noAC5OAkaSqxqM1FSJlrsntGvYa7IYLFHtjuiKYOJj8p2I45Tw"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Chitato Lite Seaweed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Keripik Kentang Rumput Laut</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Makanan</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">24</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Cheetoz -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Packaged Cheetoz corn puff snack package isolated cleanly on soft gradient neutral surface, vibrant orange accents, crisp lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCManxH5hPof7N2Kq5a6NvQru2SMG6FwI9ksLITBdQZCamtSru_jpIVLDYmDsZiyeUOs5GT8vLLoIW65PJpWLpj5WlE315LiUjyEIrGHRFtTVCA8M3m-AxOQpxpfQlt2BK-jPAV7RQ0WfB6bis1wF4KekxsFYXk54YM5SwMfjPiuBzEPiz-yj6s0NvSj3OsybYoIhKh6nrLnth3CkiGieZq-qUSYi9vodH4TVRwlzw"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Cheetoz</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Jagung Bakar Gurih Renyah</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Makanan</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-error">18</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs (Menipis)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Pop Mie -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Indonesian Pop Mie instant cup noodle cup standing cleanly on studio presentation pedestal, sharp focus, clean professional e-commerce product visual." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBweO7JlsIiK_Td89wElkjtBTdc81BGTP8IZMnHzwub1A2ENgqgg0RFXegtLUXgrCCP3rZCs_luFPDVnmxch-BbTyfF2GQEQtOm9FTQCpPw93TGcBcNxEVyfdh7OkMyaaCe02rv69bC8VuHOzRghP2vLOXdfihsKtWGXpyKYAYprztIYJ6NLvGlWf2tkiSuTPLPE8DnRzq5Cyagh9-Qf3hlK5jOeu1e-NYJaU4I07s"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Pop Mie</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mie Instan Cup Aneka Rasa</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Makanan</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">40</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Roti AOKA -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Packaged soft bread Roti Aoka panggang on a bright airy table surface, modern canteen pastry merchandise, vibrant clean aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgiNgS08EfHWWxL2t-OKXFJb2aok0b6ODdnwlqbbwyL-8iapmCbx20bh4midwRido3b__21cEyem0qbq0e8WnRLfsWzRAmx1L793Oua5vKtQ99H37g94p8HLRSnULstrI1iUm7PvlRzGt79AATY2KEzGlmiVg4ds9s2oIOfcFWTAAiaIyc6d8OyzC2ckm54qPcCykAjanPxmW6tpRPF3mGhEGT-eE_aT95IxT2oCQ"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Roti AOKA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Roti Panggang Cokelat / Keju</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">Makanan</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">60</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Milku -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Milku chocolate flavored small milk bottle in sharp focus, bright studio backdrop, crisp cold drops, commercial Indonesian drink photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHTAwrKVrUp_RRHJByC3OF4jHGeuYdml0qWWG61-v_bnUhQJnxzelNMeFZ6BolcpwXtMMfKDoX8mlK9ZrqhQqDfgrZVVfzAyQqJTaJoh4VRm0XW7CO3M_ytS53jVWj0sy81Gtp9FKAvmWlTSwuyvDxU0MWfMsR-Vk-eMIn_miLKZtrxn0ngesOu2pDxUcAtLoqnBzpS56YSOrWOVBcmAtcdSfDyzWaiIMXyeUi_9c"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Milku</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Susu UHT Belgia 200ml</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Minuman</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">45</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Teh Pucuk -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Teh Pucuk Harum bottle chilled with faint moisture condensation, clear bright backdrop, commercial beverage shot with vibrant tea tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3DymzusqlDWWWZ-I4F4QxkCRBxL2_kjucwQMYEUTxdCxw-ZHFTq42VaWwulnnHe90e9TPvKX5vsEIyho4QlP6ebL038EsZbM998h5KG8lmb0cN_I966i63-uERgwi-Yout1paqgyLP_05IJoTAaWjZ65pf5h6wimiBWo3rW0kCu0jaLc4fpj4cEIfOg84fnlPC_HrqPqtnBkMOJ-mixlElvr9wAFxBbvX6zZ7P8s"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Teh Pucuk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Teh Melati Segar 350ml</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Minuman</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">55</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 9: Cimory Yogurt -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Cimory Yogurt squeeze pouch drink on crisp white aesthetic surface, soft diffused studio light, fresh healthy canteen dairy product image." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnLOuLv1Gm0f_t_bTmg-EkJHWr5dk9mpbS1WmPqSeTEVbGTKK-yRJNhc3zhgKwnt0sNo9s4CzeG9yAh-ZiHyAyKGqlrpOAweJ43yYDjLFuEMYTNvFmk0PL-lJEC3ygDxTG0Jzpf4WfoH-Ddr8_-2I9hXwKq__oKYu4AJU8vD8sZlDWxO95-mKRzbXecu8oDNmXEFmYvInYtDM78_IDbNaGoRDWR5KyZzLc8M6Lu2s"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Cimory Yogurt</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Yogurt Drink Strawberry / Blueberry</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Minuman</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">20</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 10: Pocari Sweat -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Pocari Sweat bottle with refreshing light blue water drops against a luminous clean white background, active hydration commercial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQwySI5onuDWWub2afSR8rZDPgi_NCoIEAd7s-kNEhON-R-lyT3DTNq-nadSl1Aksmvlvnq2qtNtF6rugnlawrJasCI1BKNOOBEVzxj7QoEvPQLbgZdHo7oOks5GtojbRYc1qqKxPr296x__XAhT4oDf5w5m-LMhvszG22iyFFQut1ObKAFnXfZvS20k15h-74g-ed0lXtyasZdWcLeZQrRbNQeVwk5vN_TU5GwQE"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Pocari Sweat</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Minuman Isotonik 350ml</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Minuman</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">30</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+<!-- Row 11: Air Le Minerale -->
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-3.5 px-space-md">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover bg-surface-container" data-alt="Le Minerale fresh water bottle with pure natural water droplets on a white clean minimalist background, healthy school canteen drinks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZkYAVIGfSdVY6_KIWmMKrCv74nHPtlYaAJlybAOpkZEbJhp-cORzM9U0mTEgPBdYsjLc9oIDGBz6g0IX7oECquTwvuovZodW9q-MXn-iyy2xJzD15-WQsTVl_hqrWj0lRS_61zj9msyQfYZ2QmEneDQZmKN0pbZD7LjHt31SGhoiDVjfI7x0kHYBGnO2dC_Yb51HrDJyvgSdSkpEc9GVJ2j2ThCKIDKKbYNgQm80"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Air Le Minerale</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Air Mineral Pegunungan 600ml</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">Minuman</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant font-body-sm text-body-sm italic">Harga belum diatur</span>
+<button class="p-1 rounded text-primary hover:bg-surface-container" title="Edit Harga" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-secondary">80</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">pcs (Aman)</span>
+</td>
+<td class="py-3.5 px-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface">Tersedia</span>
+</label>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-md text-primary bg-primary-fixed hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors" type="button">Edit</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Catalog Overview Count -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant">
+<div class="font-body-md text-body-md">
+        Menampilkan <span class="font-semibold text-on-surface">1 - 11</span> dari <span class="font-semibold text-on-surface">23 Produk Katalog</span> IDN Canteen
+      </div>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant opacity-50 cursor-not-allowed font-label-md text-label-md flex items-center" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+          Sebelumnya
+        </button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold" type="button">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">3</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center" type="button">
+          Selanjutnya
+          <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let canteenIsOpen = true;
+
+  function toggleCanteenStatus() {
+    canteenIsOpen = !canteenIsOpen;
+    const btnLabel = document.getElementById('toggle-btn-label');
+    const statusText = document.getElementById('status-label-text');
+    const toggleBtn = document.getElementById('toggle-canteen-btn');
+
+    if (canteenIsOpen) {
+      btnLabel.textContent = "Status Kantin: BUKA";
+      statusText.textContent = "BUKA (Menerima Pesanan)";
+      toggleBtn.className = "group flex items-center gap-2 px-space-md py-2.5 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all active:scale-[0.98]";
+    } else {
+      btnLabel.textContent = "Status Kantin: TUTUP";
+      statusText.textContent = "TUTUP SEMENTARA";
+      toggleBtn.className = "group flex items-center gap-2 px-space-md py-2.5 bg-outline text-white rounded-xl font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all active:scale-[0.98]";
+    }
+  }
+</script></main></div></body></html>

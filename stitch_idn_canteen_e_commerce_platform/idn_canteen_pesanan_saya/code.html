@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>IDN CANTEEN - School Digital Canteen</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#e2e7ff","on-primary-container":"#eeefff","background":"#faf8ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-secondary-fixed":"#001c39","on-tertiary-fixed":"#261a00","on-surface-variant":"#434655","on-secondary-fixed-variant":"#004883","on-tertiary-fixed-variant":"#5c4300","outline":"#737686","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","on-secondary-container":"#003c70","on-surface":"#131b2e","surface":"#faf8ff","tertiary":"#6d5000","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#dae2fd","on-secondary":"#ffffff","surface-variant":"#dae2fd","surface-container":"#eaedff","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#f9bd22","on-tertiary":"#ffffff","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-tertiary-container":"#ffeed3","surface-bright":"#faf8ff","surface-container-low":"#f2f3ff","on-primary":"#ffffff","secondary":"#0060ac","primary":"#004ac6","inverse-primary":"#b4c5ff","error-container":"#ffdad6","surface-tint":"#0053db","outline-variant":"#c3c6d7","tertiary-fixed":"#ffdf9f","on-background":"#131b2e","secondary-container":"#64a8fe","secondary-fixed":"#d4e3ff","secondary-fixed-dim":"#a4c9ff","inverse-surface":"#283044","on-error":"#ffffff","tertiary-container":"#8b6700","inverse-on-surface":"#eef0ff","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","gutter":"1rem","margin":"1rem","margin-desktop":"3rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-tablet":"2rem","space-lg":"1.5rem","space-md":"1rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><img alt="IDN Canteen Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDFkpO3DmfbcOQPHj7slCBbjZ1q0H0gUncHJuqneL1h_Qt5TOmNJnY8t_1AQGVNlxBZXFp7Dr94FkF0XrmqQGV8SEHjogrBBKCYplhG_M4-ci3KJkbkaHpO0lcSeJWDB1uBRMJ8YNxaKbMY9YCUqG6w3heYFBe9OkW8j6K47EcDqO2xiRVQXKYcao2nr4XFhSO-kVJ4El9_c6PwSGQCTjJQRkmUtbHsFWCial2ZdHXf"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">IDN CANTEEN</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Jajan Praktis, Istirahat Lebih Asik!</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Kantin Sedang Buka</span></div></div><div class="hidden lg:flex items-center flex-1 max-w-xs xl:max-w-sm px-space-sm"><div class="w-full flex items-center bg-surface-container-low px-space-md py-space-xs rounded-xl focus-within:ring-2 focus-within:ring-primary/20"><span class="material-symbols-outlined text-outline mr-space-xs text-[20px]">search</span><input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Cari snack atau minuman favoritmu..." type="text"/></div></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="beranda" href="#">Beranda</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="daftar-menu" href="#">Daftar Menu</a><a aria-current="page" class="px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="pesanan-saya" href="#">Pesanan Saya</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="admin-dashboard" href="#">Admin Dashboard</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="relative p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-sm text-label-sm font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-sm">3</span></button><div class="flex items-center gap-space-sm pl-space-xs py-1 pr-space-sm rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARFDhdDCYT8OYSnZtJZwonmRL16oy0lieat-EBhGL6N2glDnLpTjCf5ACCBmcPArV3CNAsKJMQIJc-OczNRWiTto_hjpMX3lxZwLr0IWuUSQP99jo1g5zl_iZkAg0DWHnCk4PkN2nbVK0u3gOrXEigJ6vaNGsqxUw5-xFBDpcauH8ulm1XPSn2SR2AcNFEMz2FCNZRgrcY372WjHl4crba_k4l14IoVRqilqlxAKM"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Fahri R.</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">XI RPL 1</span></div></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg space-y-space-xl">
+<!-- Top Bar Navigation & Tab Selector -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+            Status Terkini Santri
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• Istirahat Pertama (10:15 - 10:45 WIB)</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Pesanan &amp; Riwayat Jajan</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Pantau antrean jajananmu secara real-time dan selesaikan pesanan keranjang tanpa antre panjang.</p>
+</div>
+<!-- Segmented Navigation Chips -->
+<div class="flex items-center p-1.5 rounded-2xl bg-surface-container-low shadow-sm overflow-x-auto shrink-0" role="tablist">
+<button class="tab-pill px-space-md py-space-sm rounded-xl font-label-lg text-label-lg transition-all flex items-center gap-space-xs bg-primary text-on-primary shadow-md" id="tab-btn-active" onclick="switchMainTab('active')">
+<span class="material-symbols-outlined text-[18px]">timelapse</span>
+<span>Pesanan Aktif</span>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-white/20 text-on-primary ml-1">1</span>
+</button>
+<button class="tab-pill px-space-md py-space-sm rounded-xl font-label-lg text-label-lg transition-all flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface" id="tab-btn-history" onclick="switchMainTab('history')">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Riwayat Pesanan</span>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-medium bg-surface-container-high text-on-surface-variant ml-1">3</span>
+</button>
+<button class="tab-pill px-space-md py-space-sm rounded-xl font-label-lg text-label-lg transition-all flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface" id="tab-btn-cart" onclick="switchMainTab('cart')">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Keranjang Jajan</span>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary text-on-secondary ml-1" id="cart-badge-count">2</span>
+</button>
+</div>
+</div>
+<!-- MAIN VIEW CONTAINER -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT & CENTRAL MAIN REGION (Active Tracking or History) -->
+<div class="lg:col-span-8 flex flex-col space-y-space-lg" id="left-flow-container">
+<!-- SECTION 1: LIVE ACTIVE ORDER -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md md:p-space-lg shadow-sm space-y-space-lg" id="section-active-order">
+<!-- Card Header & Pickup ID -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pesanan #IDN-8842</span>
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold animate-pulse">Sedang Disiapkan</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+<span>Waktu Pemesanan: Hari ini, 10:15 WIB</span>
+</div>
+</div>
+</div>
+<!-- Fast Action Pickup Button -->
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-transform active:scale-95 shadow-sm" onclick="toggleTokenModal(true)">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+<span>Tunjukkan Token Kasir</span>
+</button>
+</div>
+<!-- 4-Step Tracker Flow -->
+<div class="p-space-md rounded-2xl bg-surface-container-low space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Progres Pesanan Anda</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Estimasi Pengambilan: ~4 Menit</span>
+</div>
+<div class="relative pt-2 pb-1">
+<!-- Visual Step Track Line -->
+<div class="absolute top-7 left-6 right-6 h-1.5 bg-surface-container-highest rounded-full -translate-y-1/2 z-0">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 45%;"></div>
+</div>
+<!-- Steps Grid -->
+<div class="relative z-10 grid grid-cols-4 gap-2 text-center">
+<!-- Step 1: Menunggu (Done) -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md mb-2">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">1. Menunggu</span>
+<span class="font-body-sm text-[11px] text-primary">Terkonfirmasi</span>
+</div>
+<!-- Step 2: Diproses (Active) -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md ring-4 ring-primary-fixed mb-2 animate-bounce">
+<span class="material-symbols-outlined text-[20px]">soup_kitchen</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">2. Diproses</span>
+<span class="font-body-sm text-[11px] text-primary font-medium">Disiapkan Kasir</span>
+</div>
+<!-- Step 3: Siap Diambil (Upcoming) -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">inventory</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">3. Siap Ambil</span>
+<span class="font-body-sm text-[11px] text-outline">Counter 2</span>
+</div>
+<!-- Step 4: Selesai -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">done_all</span>
+</div>
+<span class="font-label-md text-label-md text-outline font-medium">4. Selesai</span>
+<span class="font-body-sm text-[11px] text-outline">Enjoy Break!</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Items Ordered Detail -->
+<div class="space-y-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">shopping_bag</span>
+              Rincian Item Jajan (3 Barang)
+            </span>
+<div class="space-y-space-xs">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Chitato Lite Seaweed potato chips snack pouch on clean food counter with studio lighting blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy1yo-rbkdblflNUweiZP9oyH2DHkBxjK_cD5clrnRn-gViWsZS9KsUsSWflpU6pKh8AfZ_D0xMQdRvVf6g8ik-WONqyAiNldiQ5xRrMenUkxyTHeBjsgF73j8_y-piBO9Kd49ESXDsBggAxkMyNWSlxmoJkdWHC0__ws3H08cqMdA-YpJzeZxUmM8Oa3tLsyiSXXHLjz5Q8qVYo_uKB4IQa3gxidXI7AtywiAsh8"/>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Chitato Lite Seaweed</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kategori: Makanan Ringan</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="inline-block px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">1x</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Chilled bottle of Teh Pucuk Harum Jasmine tea standing beside condensation water droplets bright natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7fsc35ibPlKXvoF89u_iUQ5lwMrDHf3xFJ9acmmkOQ48JmqkmjHVhF_mmki47ypMIB8Nb48P8uPuKutyQHOKMr-GjB6-SFZ1-CRyphH37loQx9u4cUMKGuIR81W-v06WUlhLfHvC3wjmJfAwQhVAch_dh5VT0kIgNri1ZcCwj1f7DghbLmX_6pHh2nj3t-D6y9WMwEmYpxYiZPHY1Ba13nkwm-_klV8yzYLrbCg0"/>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Teh Pucuk Harum (Dingin)</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kategori: Minuman Segar</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="inline-block px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">1x</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<img class="w-12 h-12 rounded-lg object-cover shrink-0" data-alt="Pop Mie cup instant noodle steaming hot ready to serve on school cafeteria tabletop cozy lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjyeKmsesboEyszsQVwexzmwH22uBqi4_wqL81xVS0LhRXmq_nGAZnt0BTivyne9pghn999FvQjQjY_BREWodZle7W_ti7nd0bw6pNKURRZ9JHAzOfT0eNJw7qiNfqN7qfcu1cc1QULcJorlDzPRYSduv4h1NAohzQNDupc2nxVosVEfkPULC2SQFvqOWebff8zM39i4Z74I2gMNi3zxcSFpCh-uexie3nPemkj4M"/>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Pop Mie Kuah Kari Ayam</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kategori: Makanan Kuah Panas</span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="inline-block px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">1x</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pickup Location, Payment & Price Info Split Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Location & Station -->
+<div class="p-space-md rounded-2xl bg-surface-container space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+<span class="font-label-lg text-label-lg font-bold">Lokasi Pengambilan</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">Counter 2</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gedung Kantin Lt. 1 IDN Boarding School</p>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>Dekat Pintu Timur Area Putra</span>
+</div>
+</div>
+<!-- Price & Payment State -->
+<div class="p-space-md rounded-2xl bg-surface-container space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+<span class="font-label-lg text-label-lg font-bold">Metode Pembayaran</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">QRIS Kasir</span>
+</div>
+<div class="space-y-1 pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Total Tagihan Final:</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">info</span>
+<p class="font-label-lg text-label-lg text-tertiary">Harga belum diatur (Menunggu Kasir)</p>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Kasir sedang menghitung varian porsi/topping Pop Mie &amp; scan barcode fisik.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Action Button for Pickup Ticket -->
+<div class="pt-space-xs">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md hover:bg-primary/90 transition-all" onclick="toggleTokenModal(true)">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+<span>Tunjukkan ke Petugas Kantin (Ambil Jajan)</span>
+</button>
+</div>
+</div>
+<!-- SECTION 2: RIWAYAT PESANAN TERDAHULU -->
+<div class="space-y-space-md" id="section-order-history">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">history</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Riwayat Pesanan Terdahulu</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 Pesanan Terakhir</span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Past Order 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">bakery_dining</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">#IDN-8721</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• 24 Okt 2025 (13:10 WIB)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Roti AOKA Cokelat (2x), Susu Milku Strawberry (1x)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Counter 1 - Roti &amp; Minuman Dingin • Total: Rp 13.000 (QRIS)</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-space-xs shrink-0">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Selesai
+                </span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Pesan Lagi</button>
+</div>
+</div>
+<!-- Past Order 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[26px]">ramen_dining</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">#IDN-8650</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• 22 Okt 2025 (10:20 WIB)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Pop Mie Ayam Bawang (1x), Pocari Sweat 350ml (1x)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Counter 2 - Olahan Cepat • Total: Rp 14.500 (Saldo Kartu)</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-space-xs shrink-0">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Selesai
+                </span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Pesan Lagi</button>
+</div>
+</div>
+<!-- Past Order 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[26px]">coffee</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">#IDN-8592</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">• 20 Okt 2025 (15:40 WIB)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Nabati Wafer Keju (1x), Kopi Good Day Freeze (1x)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Counter 3 - Snack Mart • Total: Rp 9.000 (Tunai Kasir)</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-space-xs shrink-0">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Selesai
+                </span>
+<button class="font-label-sm text-label-sm text-primary hover:underline">Pesan Lagi</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT REGION: EMBEDDED / STICKY "KERANJANG JAJAN" & CHECKOUT FORM -->
+<div class="lg:col-span-4 sticky top-24 space-y-space-md" id="cart-panel">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">shopping_cart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Keranjang Jajan</h2>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant" id="cart-item-summary">2 Menu</span>
+</div>
+<!-- Cart Item List -->
+<div class="space-y-space-sm" id="cart-items-wrapper">
+<!-- Cart Item 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-space-xs transition-all" id="cart-row-1">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<img class="w-10 h-10 rounded-lg object-cover" data-alt="Chitato Lite Seaweed potato snack crisp packaging on bright white surface studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWjtr2HXBYlDaMW1tMxD91mW-Uqr8vnuEpybKLy9SirFVQ1510QGbVEtdyGotDcZdmsvxj732xG4NmOZru1zGoHccHI_Z1qKayAGLpNr8Tx4uBYpHyLT1qyigrUuILxM900GN9v8pB5rUpiUOMs0XURJhTJ0LsNEm7d8tXp04o2kPBImLVQKOv8qO6gvRE1q3P55J3gDWCChtc1J7Iex9Xro6klUClxzu1XJbpamk"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface leading-snug">Chitato Lite Seaweed</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Rp 6.500 / bks</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-error hover:bg-error-container/30 transition-colors" onclick="removeCartItem('cart-row-1', 6500)" title="Hapus menu">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-bold" id="price-row-1">Rp 6.500</span>
+<!-- Stepper Pod -->
+<div class="flex items-center bg-surface-container rounded-xl p-0.5 shadow-inner">
+<button class="w-6 h-6 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest text-on-surface transition-colors" onclick="updateQty('qty-val-1', -1, 6500, 'price-row-1')">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="font-label-md text-label-md px-space-xs text-on-surface font-semibold min-w-[20px] text-center" id="qty-val-1">1</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest text-on-surface transition-colors" onclick="updateQty('qty-val-1', 1, 6500, 'price-row-1')">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-space-xs transition-all" id="cart-row-2">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<img class="w-10 h-10 rounded-lg object-cover" data-alt="Floridina Orange juice chilled bottle with juicy orange fruit splash and drops vibrant product render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgLqo5mOY8dPzwLhME1XvHN-XAu46nDCULpu6yWipCWJqCgMh9p0mKB45R8wyEl0OuhBHg_UQFyJlWcfufMFKQ8Xo6heZZAZ2rwOFNhT14bqwkwHw5qL0DcqlqmuXBZxroZDy32vEQNqWd3vP3sUW8mrgtCMOq59I6M3Os1sGOEti80_JVxoiF0EnmoMOCVvInp28Vn-e4Iu-KD3CfAxpVqSHvL2AgbGRLvZ5_le8"/>
+<div>
+<p class="font-label-md text-label-md text-on-surface leading-snug">Floridina Pulpy Orange</p>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Rp 4.000 / btl</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-error hover:bg-error-container/30 transition-colors" onclick="removeCartItem('cart-row-2', 8000)" title="Hapus menu">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-bold" id="price-row-2">Rp 8.000</span>
+<!-- Stepper Pod -->
+<div class="flex items-center bg-surface-container rounded-xl p-0.5 shadow-inner">
+<button class="w-6 h-6 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest text-on-surface transition-colors" onclick="updateQty('qty-val-2', -1, 4000, 'price-row-2')">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="font-label-md text-label-md px-space-xs text-on-surface font-semibold min-w-[20px] text-center" id="qty-val-2">2</span>
+<button class="w-6 h-6 flex items-center justify-center rounded-lg hover:bg-surface-container-lowest text-on-surface transition-colors" onclick="updateQty('qty-val-2', 1, 4000, 'price-row-2')">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Special Note Input -->
+<div class="space-y-space-xs pt-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-space-xs" for="cart-note">
+<span class="material-symbols-outlined text-[15px] text-primary">edit_note</span>
+              Catatan Khusus Pesanan
+            </label>
+<textarea class="w-full p-space-sm rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none transition-all" id="cart-note" placeholder="Contoh: Pop Mie minta air panas ditutup rapat, sendok garpu kayu 2 pcs..." rows="2"></textarea>
+</div>
+<!-- Checkout Configuration (Location & Payment Method) -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                Titik Pengambilan
+              </span>
+<span class="font-label-md text-label-md text-on-surface font-bold">IDN Canteen (Counter 1)</span>
+</div>
+<!-- Payment Selector -->
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface font-medium block">Pilihan Pembayaran</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="payment-method-btn p-space-xs rounded-xl flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed ring-2 ring-primary transition-all" id="btn-pay-qris" onclick="selectPaymentMethod('qris')" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+<span class="font-label-sm text-label-sm font-semibold">QRIS Santri</span>
+</button>
+<button class="payment-method-btn p-space-xs rounded-xl flex flex-col items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all" id="btn-pay-cash" onclick="selectPaymentMethod('cash')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span class="font-label-sm text-label-sm font-semibold">Tunai / Kasir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bill Summary Calculation -->
+<div class="p-space-sm rounded-xl bg-surface-container-low space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span>Subtotal Jajan</span>
+<span class="font-label-md text-label-md text-on-surface" id="calc-subtotal">Rp 14.500</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Biaya Kemasan &amp; Pelayanan</span>
+<span class="font-label-md text-label-md text-secondary">Gratis (Siswa IDN)</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface font-headline-sm text-headline-sm font-bold">
+<span>Total Akhir</span>
+<span class="text-primary" id="calc-total">Rp 14.500</span>
+</div>
+</div>
+<!-- Checkout CTA Action -->
+<div class="space-y-space-xs pt-space-xs">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-lg hover:bg-primary/90 active:scale-[0.99] transition-all" onclick="handleConfirmOrder()">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Konfirmasi Pesanan</span>
+</button>
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span>Jaminan Kantin Higienis &amp; 100% Halal IDN</span>
+</div>
+</div>
+</div>
+<!-- Student Help & Operational Info Banner -->
+<div class="p-space-md rounded-2xl bg-surface-container-high space-y-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<span class="font-label-lg text-label-lg font-bold">Info Pengambilan Saat Istirahat</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Pesanan langsung diteruskan ke tablet kasir. Tunjukkan nomor antrean <strong>#IDN-8842</strong> atau QR token di layar HP saat counter memanggil.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL / POPUP: QR TOKEN DISPLAY UNTUK PETUGAS KANTIN -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="token-modal">
+<div class="bg-surface-container-lowest max-w-sm w-full rounded-2xl p-space-lg shadow-2xl space-y-space-md animate-in fade-in zoom-in duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Token Ambil Santri</span>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="toggleTokenModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="text-center space-y-space-xs">
+<span class="font-headline-lg text-headline-lg font-bold text-primary tracking-wider">#IDN-8842</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tunjukkan kode ini langsung ke layar scanner barcode kasir Counter 2.</p>
+</div>
+<!-- Generated Clean SVG Barcode / QR Simulation -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center space-y-space-sm">
+<!-- SVG QR Code Representation -->
+<svg class="w-44 h-44 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- Outer border anchor corners -->
+<rect fill="none" height="24" rx="2" stroke="currentColor" stroke-width="4" width="24" x="10" y="10"></rect>
+<rect fill="currentColor" height="12" width="12" x="16" y="16"></rect>
+<rect fill="none" height="24" rx="2" stroke="currentColor" stroke-width="4" width="24" x="66" y="10"></rect>
+<rect fill="currentColor" height="12" width="12" x="72" y="16"></rect>
+<rect fill="none" height="24" rx="2" stroke="currentColor" stroke-width="4" width="24" x="10" y="66"></rect>
+<rect fill="currentColor" height="12" width="12" x="16" y="72"></rect>
+<!-- Data blocks -->
+<rect height="6" width="6" x="42" y="14"></rect>
+<rect height="14" width="6" x="52" y="14"></rect>
+<rect height="12" width="6" x="42" y="26"></rect>
+<rect height="6" width="14" x="14" y="42"></rect>
+<rect height="8" width="8" x="34" y="42"></rect>
+<rect height="16" width="6" x="48" y="44"></rect>
+<rect height="6" width="10" x="62" y="42"></rect>
+<rect height="8" width="12" x="78" y="44"></rect>
+<rect height="8" width="8" x="42" y="66"></rect>
+<rect height="12" width="8" x="56" y="64"></rect>
+<rect height="8" width="18" x="70" y="64"></rect>
+<rect height="6" width="16" x="42" y="80"></rect>
+<rect height="10" width="10" x="68" y="78"></rect>
+<rect height="8" width="6" x="84" y="80"></rect>
+</svg>
+<span class="font-label-sm text-label-sm tracking-widest text-outline">IDN-CANTEEN-8842-SECURE</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container space-y-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Pemesan</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Fahri R. (XI RPL 1)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Total Item</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">3 Barang</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Status Antrean</span>
+<span class="font-label-md text-label-md text-primary font-bold">Urutan ke-2</span>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow" onclick="toggleTokenModal(false)">
+        Tutup &amp; Kembali ke Halaman
+      </button>
+</div>
+</div>
+<!-- Notification Toast Simulation -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-xs font-label-lg text-label-lg" id="toast-msg">
+<span class="material-symbols-outlined text-[20px] text-secondary-container">task_alt</span>
+<span id="toast-text">Pesanan baru berhasil dikonfirmasi!</span>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    let currentTotal = 14500;
+
+    function switchMainTab(target) {
+      const activeBtn = document.getElementById('tab-btn-active');
+      const historyBtn = document.getElementById('tab-btn-history');
+      const cartBtn = document.getElementById('tab-btn-cart');
+      
+      const secActive = document.getElementById('section-active-order');
+      const secHistory = document.getElementById('section-order-history');
+      const cartPanel = document.getElementById('cart-panel');
+
+      const buttons = [activeBtn, historyBtn, cartBtn];
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      if (target === 'active') {
+        activeBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+        activeBtn.classList.remove('text-on-surface-variant');
+        secActive.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (target === 'history') {
+        historyBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+        historyBtn.classList.remove('text-on-surface-variant');
+        secHistory.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (target === 'cart') {
+        cartBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+        cartBtn.classList.remove('text-on-surface-variant');
+        cartPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function toggleTokenModal(show) {
+      const modal = document.getElementById('token-modal');
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function selectPaymentMethod(type) {
+      const qrisBtn = document.getElementById('btn-pay-qris');
+      const cashBtn = document.getElementById('btn-pay-cash');
+
+      if (type === 'qris') {
+        qrisBtn.className = "payment-method-btn p-space-xs rounded-xl flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed ring-2 ring-primary transition-all";
+        cashBtn.className = "payment-method-btn p-space-xs rounded-xl flex flex-col items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all";
+      } else {
+        cashBtn.className = "payment-method-btn p-space-xs rounded-xl flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed ring-2 ring-primary transition-all";
+        qrisBtn.className = "payment-method-btn p-space-xs rounded-xl flex flex-col items-center justify-center bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all";
+      }
+    }
+
+    function updateQty(elementId, change, unitPrice, priceDisplayId) {
+      const el = document.getElementById(elementId);
+      let currentVal = parseInt(el.textContent, 10);
+      let newVal = currentVal + change;
+      if (newVal < 1) newVal = 1;
+      
+      const diff = (newVal - currentVal) * unitPrice;
+      el.textContent = newVal;
+
+      const itemTotal = newVal * unitPrice;
+      document.getElementById(priceDisplayId).textContent = "Rp " + itemTotal.toLocaleString('id-ID');
+
+      currentTotal += diff;
+      document.getElementById('calc-subtotal').textContent = "Rp " + currentTotal.toLocaleString('id-ID');
+      document.getElementById('calc-total').textContent = "Rp " + currentTotal.toLocaleString('id-ID');
+    }
+
+    function removeCartItem(rowId, deductedPrice) {
+      const row = document.getElementById(rowId);
+      if (row) {
+        row.style.opacity = '0';
+        row.style.transform = 'translateX(20px)';
+        setTimeout(() => {
+          row.remove();
+          currentTotal -= deductedPrice;
+          if (currentTotal < 0) currentTotal = 0;
+          document.getElementById('calc-subtotal').textContent = "Rp " + currentTotal.toLocaleString('id-ID');
+          document.getElementById('calc-total').textContent = "Rp " + currentTotal.toLocaleString('id-ID');
+          
+          const badge = document.getElementById('cart-badge-count');
+          const summary = document.getElementById('cart-item-summary');
+          badge.textContent = "1";
+          summary.textContent = "1 Menu";
+          showToast("Item dihapus dari keranjang jajan.");
+        }, 200);
+      }
+    }
+
+    function handleConfirmOrder() {
+      showToast("Pesanan Anda telah dikirim ke Kasir!");
+      setTimeout(() => {
+        toggleTokenModal(true);
+      }, 700);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast-msg');
+      const text = document.getElementById('toast-text');
+      text.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">IDN CANTEEN</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Jajan Praktis, Istirahat Lebih Asik! Layanan pemesanan dan pembayaran digital kantin sekolah terpadu.</p></div><div class="space-y-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold block">Menu &amp; Layanan</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Daftar Menu Harian</a></li><li><a class="hover:text-primary transition-colors" href="#">Snack &amp; Camilan</a></li><li><a class="hover:text-primary transition-colors" href="#">Minuman Segar</a></li><li><a class="hover:text-primary transition-colors" href="#">Top-up Saldo Kartu</a></li></ul></div><div class="space-y-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold block">Operasional &amp; Lokasi</span><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">schedule</span><span>07:00 - 15:30 WIB (Senin - Jumat)</span></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span><span>Gedung Kantin Lt. 1 IDN Boarding School</span></div></div></div><div class="space-y-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold block">Komunitas &amp; Bantuan</span><p class="font-body-sm text-body-sm text-on-surface-variant">Hubungi pengelola kantin atau laporkan keluhan menu dengan mudah.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><a class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a><a class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span></a></div></div></div><div class="mt-space-xl pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 IDN CANTEEN. Seluruh hak cipta dilindungi.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Sistem Kantin Digital Resmi Sekolah</span></div></div></footer></body></html>

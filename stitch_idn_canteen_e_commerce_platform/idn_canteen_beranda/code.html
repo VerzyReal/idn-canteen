@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>IDN CANTEEN - School Digital Canteen</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#e2e7ff","on-primary-container":"#eeefff","background":"#faf8ff","primary-fixed":"#dbe1ff","primary-container":"#2563eb","on-secondary-fixed":"#001c39","on-tertiary-fixed":"#261a00","on-surface-variant":"#434655","on-secondary-fixed-variant":"#004883","on-tertiary-fixed-variant":"#5c4300","outline":"#737686","on-primary-fixed":"#00174b","surface-dim":"#d2d9f4","on-secondary-container":"#003c70","on-surface":"#131b2e","surface":"#faf8ff","tertiary":"#6d5000","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#dae2fd","on-secondary":"#ffffff","surface-variant":"#dae2fd","surface-container":"#eaedff","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#f9bd22","on-tertiary":"#ffffff","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-tertiary-container":"#ffeed3","surface-bright":"#faf8ff","surface-container-low":"#f2f3ff","on-primary":"#ffffff","secondary":"#0060ac","primary":"#004ac6","inverse-primary":"#b4c5ff","error-container":"#ffdad6","surface-tint":"#0053db","outline-variant":"#c3c6d7","tertiary-fixed":"#ffdf9f","on-background":"#131b2e","secondary-container":"#64a8fe","secondary-fixed":"#d4e3ff","secondary-fixed-dim":"#a4c9ff","inverse-surface":"#283044","on-error":"#ffffff","tertiary-container":"#8b6700","inverse-on-surface":"#eef0ff","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","gutter":"1rem","margin":"1rem","margin-desktop":"3rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-tablet":"2rem","space-lg":"1.5rem","space-md":"1rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-xl":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><img alt="IDN Canteen Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDFkpO3DmfbcOQPHj7slCBbjZ1q0H0gUncHJuqneL1h_Qt5TOmNJnY8t_1AQGVNlxBZXFp7Dr94FkF0XrmqQGV8SEHjogrBBKCYplhG_M4-ci3KJkbkaHpO0lcSeJWDB1uBRMJ8YNxaKbMY9YCUqG6w3heYFBe9OkW8j6K47EcDqO2xiRVQXKYcao2nr4XFhSO-kVJ4El9_c6PwSGQCTjJQRkmUtbHsFWCial2ZdHXf"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">IDN CANTEEN</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Jajan Praktis, Istirahat Lebih Asik!</span></div></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Kantin Sedang Buka</span></div></div><div class="hidden lg:flex items-center flex-1 max-w-xs xl:max-w-sm px-space-sm"><div class="w-full flex items-center bg-surface-container-low px-space-md py-space-xs rounded-xl focus-within:ring-2 focus-within:ring-primary/20"><span class="material-symbols-outlined text-outline mr-space-xs text-[20px]">search</span><input class="w-full bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Cari snack atau minuman favoritmu..." type="text"/></div></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="beranda" href="#">Beranda</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="daftar-menu" href="#">Daftar Menu</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pesanan-saya" href="#">Pesanan Saya</a><a class="px-space-md py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="admin-dashboard" href="#">Admin Dashboard</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="relative p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute -top-1 -right-1 bg-primary text-on-primary font-label-sm text-label-sm font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-sm">3</span></button><div class="flex items-center gap-space-sm pl-space-xs py-1 pr-space-sm rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARFDhdDCYT8OYSnZtJZwonmRL16oy0lieat-EBhGL6N2glDnLpTjCf5ACCBmcPArV3CNAsKJMQIJc-OczNRWiTto_hjpMX3lxZwLr0IWuUSQP99jo1g5zl_iZkAg0DWHnCk4PkN2nbVK0u3gOrXEigJ6vaNGsqxUw5-xFBDpcauH8ulm1XPSn2SR2AcNFEMz2FCNZRgrcY372WjHl4crba_k4l14IoVRqilqlxAKM"/><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Fahri R.</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">XI RPL 1</span></div></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Operational Alert & Ticker Strip -->
+<section class="w-full bg-surface-container-high py-space-sm px-margin md:px-margin-tablet lg:px-margin-desktop overflow-hidden">
+<div class="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-xs text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-secondary -ml-3"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide">
+          🟢 Kantin Sedang Buka • Jam Operasional: 07:00 - 15:30 WIB • Siap melayani jajan istirahat kamu!
+        </span>
+</div>
+<div class="hidden lg:flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+          100% Higienis &amp; Halal
+        </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">timer</span>
+          Siap Ambil ~5 Menit
+        </span>
+</div>
+</div>
+</section>
+<!-- Hero Main Section -->
+<section class="w-full py-space-lg md:py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop relative overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface">
+<!-- Ambient backdrops -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Text & Interaction Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<!-- Tagline Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-highest shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+<span class="font-label-md text-label-md text-primary font-bold">Jajan Praktis, Istirahat Lebih Asik!</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-tight">
+          Lagi Pengen Jajan Apa?
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Temukan snack dan minuman favoritmu di IDN Canteen. Pesan dengan mudah tanpa perlu antre saat jam istirahat sekolah tiba.
+        </p>
+<!-- Search Bar with Pill Filter Row -->
+<div class="w-full max-w-xl bg-surface-container-lowest p-space-sm rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.06)] flex flex-col gap-space-sm">
+<div class="flex items-center px-space-sm py-1 bg-surface-container-low rounded-xl">
+<span class="material-symbols-outlined text-outline mr-space-xs text-[22px]">search</span>
+<input class="w-full bg-transparent border-0 outline-none font-body-md text-body-md text-on-surface placeholder:text-outline" placeholder="Cari snack atau minuman favoritmu..." type="text"/>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-md py-2 rounded-lg font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm">
+<span>Cari</span>
+</button>
+</div>
+<!-- Quick Category Filters -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium shrink-0 ml-1">Kategori Cepat:</span>
+<button class="px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold shrink-0 shadow-sm">
+              ✨ Semua
+            </button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium shrink-0 transition-colors">
+              🍟 Makanan / Snack
+            </button>
+<button class="px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium shrink-0 transition-colors">
+              🧃 Minuman Dingin
+            </button>
+</div>
+</div>
+<!-- Hero CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="px-space-xl py-3.5 bg-primary hover:bg-primary-container active:scale-[0.98] text-on-primary rounded-xl font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all flex items-center gap-space-xs" href="#daftar-menu">
+<span>Jelajahi Menu</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="px-space-lg py-3.5 bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg rounded-xl transition-colors flex items-center gap-space-xs" href="#pesanan-saya">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+<span>Lihat Pesanan Saya</span>
+</a>
+</div>
+</div>
+<!-- Hero Visual Graphic with Floating Badges -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<!-- Main Graphic Frame -->
+<div class="relative w-full max-w-[440px] aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_12px_36px_rgba(0,0,0,0.12)] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A lively and vibrant composition of Indonesian school canteen snacks and cold beverages neatly presented on a wooden counter with soft natural daylight. Includes bags of chips, wrapped pastries, instant noodle bowls, and chilled bottled tea and flavored milk drinks with droplets of condensation. The composition conveys freshness, high hygiene standards, and mouthwatering student food culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjJsPlBhE96nxf8AezeAVmg8c-6-AzFEiDdEwmEyf0eq-kiL5HtXKcP7hBS063Bco8lK7736CXcDtHLKoss3105WGt7bx03qVwYcNExS8wNPdwFUDO0gi6lf2ezJfh9LZ2FxkKBEC_eAdZyuLdIyy3QT0SHSI1lD1XEN-f2U4eJLEYyxs3NNATpIbZI-4aTvt3EvH13y8ZKrUKaLCp170xHyl9GCXmFvh5JpgVWIE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md text-surface-bright">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm mb-1">
+              Paling Laris Minggu Ini
+            </span>
+<h3 class="font-headline-sm text-headline-sm text-surface-container-lowest font-bold">
+              Siap Santap Saat Bel Istirahat
+            </h3>
+<p class="font-body-sm text-body-sm text-surface-dim">
+              Hemat waktu antre dengan pesan online di IDN Canteen.
+            </p>
+</div>
+</div>
+<!-- Floating Badge Top Left: Halal & Higienis -->
+<div class="absolute -top-4 -left-4 sm:left-2 bg-surface-container-lowest p-space-sm rounded-2xl shadow-xl flex items-center gap-space-sm animate-bounce [animation-duration:4s]">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">100% Halal &amp; Higienis</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Terjamin &amp; Terpantau</span>
+</div>
+</div>
+<!-- Floating Badge Bottom Right: 5 Menit Ambil -->
+<div class="absolute -bottom-4 -right-2 sm:right-0 bg-surface-container-lowest p-space-sm rounded-2xl shadow-xl flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]">avg_pace</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Siap dalam 5 Menit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Ambil tanpa ribet</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Category Showcase -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-widest uppercase">Jelajahi Berdasarkan Kategori</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Pilihan Menu Favorit</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+          Semua produk diperbarui setiap pagi langsung dari kitchen dan rak etalase kantin sekolah.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Category Card A: Snacks -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-44 h-44 bg-primary-fixed/20 rounded-full blur-2xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md font-bold tracking-wide">
+                KATEGORI A — MAKANAN / SNACKS
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                13 Produk Tersedia
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mb-space-md">
+<div class="h-24 rounded-2xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chitato Lite seaweed flavored potato chips snack pack displayed appetizingly in modern packaging against a clean background with warm light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdKKoGD8EzdCdGFLrrGWhkqscC3V67i2KHpKWt7Q6Qdr9rmqf1AstR2-v1VCNgnls3Ux5y4BJd24xzJ4gohynfjLjHcHfTeUPp9F0hcWM1xLN_7h7aS5oFO7xrcYja-YSSAHuYzLPNe-3btIdy-rF1xliirVjC8l7GreZogxW-s1Pwlus7wVfZoxA1pMgJwtJkl2C7ca5n9CJn3PtTYTapTjM1Ja6u03kH8eeBbUY"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-label-sm text-surface-container-lowest bg-on-surface/60 backdrop-blur-sm px-1.5 rounded">Chitato</span>
+</div>
+<div class="h-24 rounded-2xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Pop Mie instant cup noodles showing savory broth, noodles and hot steam rising gently, ready to eat in school lunch recess." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA5sginl2y8cRt8K2xSEMYq3XqNTvNBgIQQGKMF_LorS_patgrYK3AXRWWri-Ye0nEaBfIyppYV37nnEDp2bzkQ7N2Ai9iLNrwvvXM1akxkVYtie0pZCubpJ0m4Xy9o-_UARYbVksk8ay-i1Y_mEJurTRCJix_1pXzQds8Qgp0mtfiklgCTfjOw61f9rf14d3eDhd5gvRJhLS8ViaD72BYaHvIQJQ0pdy5Sxokw38"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-label-sm text-surface-container-lowest bg-on-surface/60 backdrop-blur-sm px-1.5 rounded">Pop Mie</span>
+</div>
+<div class="h-24 rounded-2xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Soft and fluffy wrapped AOKA bread with chocolate and vanilla cream fillings ready to serve in school cafeteria setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9tMr3y4ImZm6OKmpxnUscfKhiDHUNCGtOlmOxm7WXRZYWzufCAQZF5oMAy3lI1z9lSOUsVh9p4MR_LhguHjrGoI2vD_uGHtsSV9FmLxFoTM78ARu9JvjRBmI4zRAumIKsC3lw9UHFVXxWNXiMWfxbcqQfJvUtWxOHdqIwakzY4_JvAYq2EP_uEU9ZJeWxJEKlf6U3eGCZRkKqXwpBqtw54GTlUwyVCjqJxqDMolo"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-label-sm text-surface-container-lowest bg-on-surface/60 backdrop-blur-sm px-1.5 rounded">Roti AOKA</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Daftar snack hits: <span class="font-semibold text-on-surface">Bang Bang, Chitato Lite, Pop Mie, Roti AOKA, Nabati Wafer, dll.</span> Pilihan pas untuk ganjal lapar di jam istirahat.
+            </p>
+</div>
+<a class="w-full py-3 px-space-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary font-label-lg text-label-lg rounded-xl transition-all flex items-center justify-center gap-space-xs font-semibold" href="#makanan">
+<span>Lihat Semua Snack</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Category Card B: Drinks -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-44 h-44 bg-secondary-fixed/30 rounded-full blur-2xl pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-secondary font-label-md text-label-md font-bold tracking-wide">
+                KATEGORI B — MINUMAN / DRINKS
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+                10 Produk Tersedia
+              </span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mb-space-md">
+<div class="h-24 rounded-2xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chilled Milku chocolate flavored milk bottle with cold condensation drops, refreshing and appetizing on a clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAso6aK0VZOhBo4C2euDGmLuwGwxTce_ZWHd1Gs9fbKvV1eyI-ulVNbhyeikOIZkOxecYb8mI0IlJhzgDqk9PHOvXEGO-HXJ70oQQz4iODZAgIRKdnGm6Gfp30p1qtCFoiqd68Em2nJqZoOCE38zH-mHJb1LOy1bQf99zSk1souWoRJ0evURBbKOXlyxX8kBE8iof5_-azCniza_E4ItPNUQc9r74TmkGZVmxrPOOk"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-label-sm text-surface-container-lowest bg-on-surface/60 backdrop-blur-sm px-1.5 rounded">Milku</span>
+</div>
+<div class="h-24 rounded-2xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Ice cold Teh Pucuk Harum jasmine tea bottle with crisp ice crystals and dew on exterior bottle surface, Indonesian school favorite." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrPmYqRtUQux521PhCOxIxYNWuF1hrvplj5tS1xx2QecrwINVQYBv6dhcydDukaDKSoXo4_Fhe34KYyoia4GdjoqYTZF0B7bHweRIdXhT1Qaip-h-gc3hD2FSu-zGRQXOTKqDuQ40FYHlffvP9ScwQ87L3wIR7mfokBNU-WIzWinf6ZU30-n8IT_oF8n15QPwWk1lsjCVtuqGsdlTogzkXtxUnjPau274TwY4zNM4"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-label-sm text-surface-container-lowest bg-on-surface/60 backdrop-blur-sm px-1.5 rounded">Teh Pucuk</span>
+</div>
+<div class="h-24 rounded-2xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Refreshing Cimory drink yogurt bottle with berry flavors, frosty cold condensation and dynamic clean lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZH1P2bSvUIBCZSnByd-geFBoGQQoZxIODjIpUTPzVOB0d_m2_hJndk23jKQ8eksaWZt58jEvxepk12KuqY28Kv1HtH1shhfSaQGxvJLjVojldjvqeW05TPtGl72mt0Rzr-dj2DAOJoiJqcdom_NvBkrJ_ypSt6dyaaPlW9rDphJGqST45oFTWCYTScxE12HWmb9FIL3ecLj_XSClU_rcyhhTUvri-okROmG29iUg"/>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-label-sm text-surface-container-lowest bg-on-surface/60 backdrop-blur-sm px-1.5 rounded">Cimory</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Minuman dingin menyegarkan: <span class="font-semibold text-on-surface">Milku, Teh Pucuk, Cimory Yogurt, Pocari Sweat, Golda, dll.</span> Selalu disimpan dalam cooler box dingin.
+            </p>
+</div>
+<a class="w-full py-3 px-space-md bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary font-label-lg text-label-lg rounded-xl transition-all flex items-center justify-center gap-space-xs font-semibold" href="#minuman">
+<span>Lihat Semua Minuman</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Products Section (Populer & Favorit Siswa) -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface-container-low" id="daftar-menu">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="inline-flex items-center gap-1.5 text-tertiary-container mb-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Top Rekomendasi Hari Ini</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Populer &amp; Favorit Siswa</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Menampilkan 8 Produk Pilihan</span>
+</div>
+</div>
+<!-- 8 Exact Items Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-md">
+<!-- Product 1: Chitato Lite Seaweed -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chitato Lite seaweed crispy potato chips package positioned on a bright minimalist school canteen counter with soft warm shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq4W9-r27HaFRdbZOwvY2CVJu1rcLnWJtuDRAQx9D7fpsQOnhq6hZhmqjLD6At1BKt0WoCSZQCY0NtxMEG0yaiE9Ho7VGWWnTZpMl1L8GbcIevpRP1IQUavA0Ab8j3KXAjxGfyGUmRtHtywPc1OvIa0hvqHFVW-SeQHy2Jzil3n3V9zZokKOhAOkwMPmiV_OpE9H7e58zXOV9BKa0t-P-e3rwdwxzbCnskwCxPkTw"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                Makanan
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Chitato Lite Seaweed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Snack renyah rumput laut</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 2: Pop Mie -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Pop Mie cup noodles hot and steaming ready to eat with flavorful chicken soup topping in a school cafeteria setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsCAOz0V0ghWTRCEuiTUjuKH5vS7CLT4IuQo9PHixZ1ALUk324HUo8-Q4V5xW74Q6AQE5Sa8nZ8vqH4tRsBEfYLuon43d1OeEmLcFuINX8zShNr4ZpM4ZbBTI2-fMo8Ee_snrlEocHI8KvTcloEpnaebmWlhN_wzpUc9tiO55j1eO0erUgc_aTxNQXjh3T-X9dQywGQIyu6q9HYLP-Pdhx0ArvtXJqhpImkd8USfg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                Makanan
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Pop Mie</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Mie cup kuah hangat praktis</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 3: Roti AOKA -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="AOKA soft cream bread loaf pack on a bright surface with modern lighting, perfect snack for school break." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxyIUfYbd5jdUxzgo7jzhaBwG3zBZkWv0lQlLTRJbKgCuWMwxUlTqqYxONJdtYkY2rqcDV4aFgxMavr8Aw0tYU72mSaHrQRFHpJjKl3cZG5r0v02wYV0_nfPBLjK8a-Bpdh4WTZZ2u9Q6OpGEmJpWXxlYqQ_8afYCgxQlCKoEpr7ByasA7jP-VLLEltEcVy1oatOhTYPzULEAJG61Kbk9Mqcez2Rot7_-WhNjRolI"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                Makanan
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Roti AOKA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Roti panggang lembut legit</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 4: Teh Pucuk -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Teh Pucuk Harum cold jasmine tea bottle glistening with fine water beads, chilled beverage photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABKSa06RehtREpGbZPylY4fHSnwFq90TnOodhyh96JqHkAi0FP-jPST27qobM5X-t4WojS2-PnNzosVYOxULYOHUWuZwWZGg6Bxd2UjElxB4YJcuX29JqPoo44u_eIN3LkpcxKhkn88EsrdCSLpqwlQfcSkhGXWhHSTwUu-Mw-fuR7AKlloiudilrSN13WX-5duv_axXOaIZpeKfoxFqrRYatE0Alr_3uycacMpxQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold shadow-sm">
+                Minuman
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Teh Pucuk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Teh melati dingin segar</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 5: Cimory Yogurt -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Chilled bottle of Cimory drink yogurt fruit blend against a bright cheerful school kitchen backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0jN0IelQ7w2xnF0jouutP6KUFXu-d5ooTmj4vzOdKIqSJppLxpNEXwtkqTLTtwXNIWcoV8sB57zETWjP5CRURl_pM-FhJvnpB2NetHnR9AFzoYF6nNXPx6BwuIc1STaa9deE36IVd2d63s3vxz1VbQbxmV026iCjBoCKgPQlvUgwJeGp7nd9gbdx5c9tcrM6d84x2J6g64AyW859JxETTifSaG3QOwBYre_gCDF4"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold shadow-sm">
+                Minuman
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Cimory Yogurt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Yogurt asam manis menyehatkan</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 6: Pocari Sweat -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Pocari Sweat isotonic drink bottle in ice cold condition, water droplets glistening on blue label." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv82qE3KmUck-stvf_rBK0F_Xr1sT2bFUdcGlJ10PeJ-kKQvRPXJXoBSmZ7Yl-F8eVYm5HG37e7etBNg8-jWvHznWKygdiG7-2S-6iQwgBxduMF-WTIYUqcE76qxtG46xNolslB53nRx81nBvd5ZinotOQsnDD6gYbd9QBM4Bcsobwlp6b2B4RhPYaDoAvScS7yLaM2GMyB0RVaPj-fYosEiBu4BAyB-kgDalWCMU"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold shadow-sm">
+                Minuman
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Pocari Sweat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Kembalikan ion tubuh habis olahraga</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 7: Bang Bang -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Bang Bang chocolate caramel wafer snack packaging on a crisp bright surface, delightful sweet treat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXx-JfYxinMwxuWnQ6Yc5_HhktzRjtq-PtJkllE8rGfb7vG4auOKwg9c4zUPHYC7mRNvwYHHEWir1xW9XvjXi_Z3DbTNt7tAtTw8t2W7xbuSfhqaDYFO82UmuNMITreOEeEU8MP0qp2Z3qopwwqeLdtKxSLb0KJXhHkQZQXPomhOxxgZjuVY0WoAmgo1IUUnCkMUKpnfy5z_C3ZioWZkh_IVzT37UHaDQVLnnlT-o"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                Makanan
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Bang Bang</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Wafer cokelat karamel renyah</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Product 8: Milku -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-lg transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Milku rich milk bottle chilled with dew and fine mist, displayed in clean commercial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC91-MMZPu_cJ_U0F0A7gx58GFknuupVtukABJmEsDNVjstV-wcakS9XlnX4v2U4rdvxO7nhRL14inHSczEA7LgiWCh6yGagtvVxtMca1GEpDuEwWJPeAPcRjPogVaIfr5rnl_xNk1TmTHh0xvm1DZT0DXKB-4SbfB69DQjSiivu4hGkbfbwh18H3D5_u9vm4LVg0X4OCGZRfdlvqq2OT5wSAL8L26kWJzxvODVlSg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold shadow-sm">
+                Minuman
+              </span>
+<span class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium">
+                Tersedia
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Milku</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Susu sapi murni rasa cokelat</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Harga</span>
+<span class="font-label-md text-label-md text-on-surface-variant italic font-medium">Harga belum diatur</span>
+</div>
+<button class="w-9 h-9 rounded-xl bg-primary hover:bg-primary-container active:scale-95 text-on-primary flex items-center justify-center shadow-sm transition-all" title="Tambah ke keranjang">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section: Cara Mudah Jajan -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop bg-surface">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center max-w-xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-widest uppercase">Alur Pesanan Simpel</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Cara Mudah Jajan di IDN Canteen</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Hanya butuh 3 langkah singkat tanpa perlu berdesakan saat lonceng istirahat berbunyi.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Connecting Line for Desktop -->
+<div class="hidden md:block absolute top-1/2 left-[15%] right-[15%] h-0.5 bg-surface-container -translate-y-6 z-0"></div>
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-space-md shadow-md">
+            1
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Pilih Snack &amp; Minuman</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Buka menu lewat handphone atau tablet kelas. Masukkan snack, wafer, mie, atau minuman favoritmu ke keranjang belanja.
+          </p>
+<div class="mt-space-md inline-flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+            Cepat &amp; Praktis
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-space-md shadow-md">
+            2
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Bayar via QRIS / Kasir</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Konfirmasi pesanan dan selesaikan transaksi memakai QRIS, saldo kartu siswa, atau tunai di kasir cepat IDN Canteen.
+          </p>
+<div class="mt-space-md inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+            Cashless Ready
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-3xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-tertiary text-on-tertiary font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-space-md shadow-md">
+            3
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Ambil di Counter Tanpa Antre</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tunjukkan kode pemesanan di loket pengambilan khusus. Pesananmu sudah dikemas rapi, siap dinikmati!
+          </p>
+<div class="mt-space-md inline-flex items-center gap-1 text-tertiary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+            Langsung Santap
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Big Call To Action / Promotional Banner -->
+<section class="w-full py-space-xl px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-[1280px] mx-auto bg-gradient-to-r from-primary to-primary-container rounded-3xl p-space-xl text-on-primary relative overflow-hidden shadow-xl">
+<!-- Decorative background wave shapes -->
+<div class="absolute -right-10 -bottom-10 w-80 h-80 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute top-0 right-1/3 w-64 h-64 bg-secondary/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="max-w-2xl text-center lg:text-left">
+<span class="px-space-md py-1 rounded-full bg-white/20 text-on-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider inline-block mb-space-sm backdrop-blur-sm">
+            Waktu Istirahat Sangat Berharga
+          </span>
+<h2 class="font-headline-xl text-headline-xl font-bold tracking-tight text-on-primary">
+            Temukan Jajanan Favoritmu!
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mt-space-xs max-w-xl">
+            Cek menu lengkap dan pesan sebelum bel istirahat berbunyi agar kamu punya waktu santai lebih lama bersama teman.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0">
+<a class="w-full sm:w-auto px-space-xl py-4 bg-surface-container-lowest text-primary hover:bg-surface-container-high rounded-xl font-label-lg text-label-lg font-bold shadow-lg hover:shadow-xl transition-all text-center flex items-center justify-center gap-2" href="#daftar-menu">
+<span>Pesan Sekarang</span>
+<span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span>
+</a>
+<a class="w-full sm:w-auto px-space-lg py-4 bg-white/10 hover:bg-white/20 text-on-primary rounded-xl font-label-lg text-label-lg font-semibold transition-colors text-center" href="#pesanan-saya">
+            Cek Status Jajan
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">IDN CANTEEN</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Jajan Praktis, Istirahat Lebih Asik! Layanan pemesanan dan pembayaran digital kantin sekolah terpadu.</p></div><div class="space-y-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold block">Menu &amp; Layanan</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Daftar Menu Harian</a></li><li><a class="hover:text-primary transition-colors" href="#">Snack &amp; Camilan</a></li><li><a class="hover:text-primary transition-colors" href="#">Minuman Segar</a></li><li><a class="hover:text-primary transition-colors" href="#">Top-up Saldo Kartu</a></li></ul></div><div class="space-y-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold block">Operasional &amp; Lokasi</span><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">schedule</span><span>07:00 - 15:30 WIB (Senin - Jumat)</span></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span><span>Gedung Kantin Lt. 1 IDN Boarding School</span></div></div></div><div class="space-y-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold block">Komunitas &amp; Bantuan</span><p class="font-body-sm text-body-sm text-on-surface-variant">Hubungi pengelola kantin atau laporkan keluhan menu dengan mudah.</p><div class="flex items-center gap-space-sm text-on-surface-variant"><a class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><a class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a><a class="p-space-xs rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span></a></div></div></div><div class="mt-space-xl pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 IDN CANTEEN. Seluruh hak cipta dilindungi.</span><span class="font-label-sm text-label-sm text-on-surface-variant">Sistem Kantin Digital Resmi Sekolah</span></div></div></footer></body></html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffdf9f","tertiary":"#6d5000","primary-container":"#2563eb","surface-container-highest":"#dae2fd","surface":"#faf8ff","primary-fixed":"#dbe1ff","on-surface":"#131b2e","on-secondary-fixed":"#001c39","on-error-container":"#93000a","on-primary":"#ffffff","on-secondary":"#ffffff","tertiary-fixed-dim":"#f9bd22","inverse-surface":"#283044","surface-tint":"#0053db","surface-dim":"#d2d9f4","inverse-on-surface":"#eef0ff","surface-container-lowest":"#ffffff","surface-bright":"#faf8ff","on-tertiary-fixed":"#261a00","on-tertiary-container":"#ffeed3","surface-container-high":"#e2e7ff","error-container":"#ffdad6","surface-container-low":"#f2f3ff","primary":"#004ac6","secondary-fixed-dim":"#a4c9ff","on-background":"#131b2e","on-primary-fixed":"#00174b","background":"#faf8ff","on-primary-container":"#eeefff","secondary-fixed":"#d4e3ff","outline":"#737686","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#004883","surface-variant":"#dae2fd","on-tertiary-fixed-variant":"#5c4300","surface-container":"#eaedff","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","on-error":"#ffffff","outline-variant":"#c3c6d7","on-secondary-container":"#003c70","primary-fixed-dim":"#b4c5ff","tertiary-container":"#8b6700","error":"#ba1a1a","secondary":"#0060ac","on-primary-fixed-variant":"#003ea8","secondary-container":"#64a8fe"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-md":"1rem","gutter":"1rem","space-lg":"1.5rem","margin-tablet":"2rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","margin-desktop":"3rem","margin":"1rem","space-xl":"2.5rem"},"fontFamily":{"label-lg":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="flex items-center gap-1.5 bg-primary/10 px-2.5 py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="font-label-sm text-primary uppercase tracking-wider font-semibold">Kantin Buka</span></div><span class="font-headline-sm text-primary font-bold tracking-tight truncate hidden xs:inline">IDN</span></div><div class="flex items-center gap-1"><a class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">search</span></a><a class="relative w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="keranjang-jajan" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">3</span></a><div class="w-8 h-8 ml-1 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8 space-y-5">
+<!-- Top bar header inside content -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Kantin IDN Terhubung
+        </span>
+</div>
+<h1 class="font-headline-lg-mobile text-on-surface tracking-tight">Profil &amp; Kartu Santri</h1>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Notifikasi Santri" class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors relative" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+</button>
+<button aria-label="Bantuan Kantin" class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</button>
+</div>
+</div>
+<!-- Santri Profile Banner & Quick Identitas -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<div class="w-14 h-14 rounded-full overflow-hidden bg-surface-container-high p-0.5 shadow-inner">
+<img class="w-full h-full object-cover rounded-full" data-alt="Close-up portrait of a cheerful teenage Indonesian Muslim school student wearing a clean white school uniform shirt and traditional black peci cap, bright daylight canteen courtyard background, soft gentle lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpdL-WO-Ka-SqFYmF2Tel4sYm_Lgw3GlBiSG23wt9HxzvBJ_xgDQLpRqrRC_9GAfPP9j-XzON_rJl01crNyZeFzwjhPEktblST2p2ejgRWGyN_ZxMkk2Rpbgas7La3B_GoBfzQ0KEKNAvnwh6mvMuEGRP628ca7F_zNhUmOaI_h2tce49mt6HoCoXmzRY-SLE6irp3UHBy1xjxn5mk3AsBLnJoDQPVCIN5DaMUoX0"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary rounded-full p-1 shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</div>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-label-lg text-on-surface truncate">Fahri Ramadhan</h2>
+<span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm">Siswa Aktif</span>
+</div>
+<p class="font-body-sm text-on-surface-variant truncate">NIS: 202311092 • XI RPL 1</p>
+<p class="font-label-sm text-primary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">domain</span>
+          Asrama Umar bin Khattab
+        </p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-xl bg-surface-container-low text-primary hover:bg-surface-container font-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Ubah</span>
+</button>
+</div>
+<!-- Kartu Digital Santri IDN (NFC Virtual Card) -->
+<div class="relative overflow-hidden rounded-2xl shadow-xl bg-gradient-to-tr from-primary to-secondary p-space-lg text-on-primary min-h-[210px] flex flex-col justify-between">
+<!-- Card Watermark Background Ornament -->
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-40 h-40 rounded-full bg-secondary-container/20 blur-lg pointer-events-none"></div>
+<!-- Header Card -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[20px] text-white">school</span>
+</div>
+<div>
+<span class="block font-label-lg text-white font-bold tracking-wider leading-none">IDN SMART CARD</span>
+<span class="block font-label-sm text-white/80 tracking-widest text-[10px]">BOARDING SCHOOL</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm px-2 py-0.5 rounded-full bg-emerald-400/20 text-emerald-200 border-none backdrop-blur-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>
+          Aktif
+        </span>
+<span class="material-symbols-outlined text-white/80 text-[22px]">contactless</span>
+</div>
+</div>
+<!-- NFC Chip & Card Numbers -->
+<div class="relative z-10 my-3 flex items-center justify-between">
+<div class="w-11 h-8 rounded-md bg-gradient-to-br from-tertiary-fixed to-tertiary-fixed-dim shadow-md flex items-center justify-center relative overflow-hidden">
+<div class="w-full h-full opacity-60 flex flex-col justify-around py-1 px-1.5">
+<div class="w-full h-[1px] bg-tertiary"></div>
+<div class="w-full h-[1px] bg-tertiary"></div>
+<div class="w-full h-[1px] bg-tertiary"></div>
+</div>
+</div>
+<div class="text-right">
+<p class="font-label-sm text-white/70 uppercase tracking-widest text-[9px]">Nomor Kartu Santri</p>
+<p class="font-label-lg tracking-[0.2em] text-white font-mono text-[15px]">9872 •••• •••• 4092</p>
+</div>
+</div>
+<!-- Sisa Saldo & Daily Limit -->
+<div class="relative z-10 flex items-end justify-between pt-2">
+<div>
+<span class="block font-label-sm text-white/80 text-[11px]">Sisa Saldo Jajan Santri</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-white/90">Rp</span>
+<span class="font-headline-lg-mobile text-white font-bold tracking-tight">45.000</span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-black/20 backdrop-blur-md text-[11px] font-label-sm text-white/90">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed">tune</span>
+          Limit Rp 50.000 / Hari
+        </span>
+</div>
+</div>
+</div>
+<!-- Quick Actions Kartu Santri (4 Grid Button) -->
+<div class="grid grid-cols-4 gap-2">
+<!-- Top Up Action -->
+<a class="group flex flex-col items-center justify-center p-2.5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all text-center" href="#section-topup">
+<div class="w-11 h-11 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-1.5 shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">add_card</span>
+</div>
+<span class="font-label-md text-on-surface leading-tight">Top Up Saldo</span>
+</a>
+<!-- QR Bayar Kasir -->
+<button class="group flex flex-col items-center justify-center p-2.5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all text-center" id="btn-qr-modal" type="button">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center mb-1.5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+</div>
+<span class="font-label-md text-on-surface leading-tight">QR Kasir</span>
+</button>
+<!-- Atur Limit Harian -->
+<button class="group flex flex-col items-center justify-center p-2.5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all text-center" id="btn-limit-modal" type="button">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center mb-1.5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</div>
+<span class="font-label-md text-on-surface leading-tight">Atur Limit</span>
+</button>
+<!-- Blokir / Kunci Kartu -->
+<button class="group flex flex-col items-center justify-center p-2.5 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all text-center" id="btn-lock-card" type="button">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-outline flex items-center justify-center mb-1.5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]" id="lock-icon">lock_open</span>
+</div>
+<span class="font-label-md text-on-surface leading-tight" id="lock-text">Kunci Kartu</span>
+</button>
+</div>
+<!-- Ringkasan Statistik Jajan Mini (2 Columns) -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-on-surface-variant">Jajan Bulan Ini</span>
+<div class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px]">shopping_cart</span>
+</div>
+</div>
+<div>
+<p class="font-headline-sm text-on-surface font-bold">Rp 168.500</p>
+<span class="font-label-sm text-primary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_down</span>
+          Hemat 18% dari Sept
+        </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-on-surface-variant">Rata-rata Harian</span>
+<div class="w-6 h-6 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[15px]">insights</span>
+</div>
+</div>
+<div>
+<p class="font-headline-sm text-on-surface font-bold">Rp 12.000</p>
+<span class="font-label-sm text-emerald-600 flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span>
+          Terkontrol Sangat Baik
+        </span>
+</div>
+</div>
+</div>
+<!-- SECTION TOP UP CEPAT SALDO KARTU -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-4" id="section-topup">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-on-surface">Isi Ulang Saldo Santri</h3>
+<p class="font-body-sm text-on-surface-variant">Pilih nominal instan atau minta transfer wali</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">account_balance_wallet</span>
+</div>
+<!-- Nominal Pills -->
+<div>
+<span class="font-label-sm text-on-surface-variant block mb-2">Pilih Nominal Top Up</span>
+<div class="grid grid-cols-2 gap-2.5" id="nominal-group">
+<button class="nominal-btn flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-left transition-all" data-val="20000" type="button">
+<span>Rp 20.000</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">check_circle</span>
+</button>
+<button class="nominal-btn active flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-left shadow-sm relative overflow-hidden transition-all" data-val="50000" type="button">
+<span>Rp 50.000</span>
+<span class="material-symbols-outlined text-[16px] text-on-primary">check_circle</span>
+<span class="absolute -top-1 -right-4 bg-tertiary-fixed text-on-tertiary-fixed text-[8px] font-bold px-4 py-0.5 transform rotate-12 uppercase">Populer</span>
+</button>
+<button class="nominal-btn flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-left transition-all" data-val="100000" type="button">
+<span>Rp 100.000</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">check_circle</span>
+</button>
+<button class="nominal-btn flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-left transition-all" data-val="200000" type="button">
+<span>Rp 200.000</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Input Manual Custom -->
+<div class="space-y-1.5">
+<label class="font-label-sm text-on-surface-variant" for="custom-nominal">Atau Masukkan Nominal Lain</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-label-md text-on-surface-variant font-bold">Rp</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-label-md placeholder:text-outline outline-none focus:bg-surface-container-lowest shadow-inner" id="custom-nominal" placeholder="Contoh: 75.000" type="number"/>
+</div>
+</div>
+<!-- Metode Pembayaran -->
+<div class="space-y-2 pt-1">
+<span class="font-label-sm text-on-surface-variant block">Metode Pembayaran</span>
+<!-- Option 1: QRIS Instan -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 text-primary accent-primary" name="pay_method" type="radio" value="qris"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-on-surface">QRIS Santri Instant</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Bebas Biaya</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[11px]">BCA, Livin', GoPay, ShopeePay, Dana</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_2</span>
+</label>
+<!-- Option 2: Virtual Account Syariah & Bank -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary accent-primary" name="pay_method" type="radio" value="va"/>
+<div>
+<span class="font-label-md text-on-surface">Virtual Account Otomatis</span>
+<p class="font-body-sm text-on-surface-variant text-[11px]">BSI Hasanah Syariah, Mandiri, BCA</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">account_balance</span>
+</label>
+<!-- Option 3: Request to Parents (Wali Santri) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary accent-primary" name="pay_method" type="radio" value="wali"/>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-on-surface">Minta Top Up Wali Santri</span>
+<span class="px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800 font-label-sm text-[10px]">WhatsApp</span>
+</div>
+<p class="font-body-sm text-on-surface-variant text-[11px]">Kirim tagihan otomatis via WhatsApp Ayah/Ibu</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-emerald-600 text-[20px]">send</span>
+</label>
+</div>
+<!-- CTA Button -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-opacity-95 active:scale-[0.99] transition-all" id="btn-submit-topup" type="button">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+<span>Lanjut Top Up Saldo</span>
+</button>
+</section>
+<!-- RIWAYAT TRANSAKSI KARTU TERAKHIR -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-on-surface">Aktivitas Jajan Terkini</h3>
+<p class="font-body-sm text-on-surface-variant">Transaksi kartu tap &amp; top-up mutasi</p>
+</div>
+<a class="font-label-md text-primary flex items-center hover:underline" href="#">
+        Lihat Semua
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="divide-y-0 space-y-2.5">
+<!-- Item 1: Jajan Chitato Lite -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">fastfood</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface">Chitato Lite + Teh Pucuk</h4>
+<p class="font-body-sm text-on-surface-variant text-[11px]">Kantin Utama IDN • Hari ini, 10:18 WIB</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-error font-bold">- Rp 14.500</span>
+<span class="block font-label-sm text-on-surface-variant text-[10px]">NFC Tap Kasir</span>
+</div>
+</div>
+<!-- Item 2: Top Up Wali -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">south_west</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface">Top Up Saldo Wali Santri</h4>
+<p class="font-body-sm text-on-surface-variant text-[11px]">BSI Virtual Account • Kemarin, 19:30 WIB</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-emerald-600 font-bold">+ Rp 50.000</span>
+<span class="block font-label-sm text-emerald-600 text-[10px]">Berhasil</span>
+</div>
+</div>
+<!-- Item 3: Pop Mie -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">ramen_dining</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface">Pop Mie Kari + Milku Cokelat</h4>
+<p class="font-body-sm text-on-surface-variant text-[11px]">Kedai Asrama • 23 Okt, 12:45 WIB</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-error font-bold">- Rp 14.500</span>
+<span class="block font-label-sm text-on-surface-variant text-[10px]">NFC Tap Kasir</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PENGATURAN & INFORMASI AKUN SANTRI (List Navigation) -->
+<section class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-2">
+<h3 class="font-headline-sm text-on-surface mb-1">Pengaturan &amp; Akun</h3>
+<div class="space-y-1">
+<!-- Item: Data Wali Santri -->
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[19px]">family_restroom</span>
+</div>
+<div>
+<span class="font-label-md text-on-surface block">Informasi Pribadi &amp; Wali Santri</span>
+<span class="font-body-sm text-on-surface-variant text-[11px]">Bapak Hendra W. (Tersambung WA)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary group-hover:translate-x-0.5 transition-all text-[20px]">chevron_right</span>
+</a>
+<!-- Item: Riwayat Pesanan Jajan -->
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-low transition-colors group" data-path="pesanan" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[19px]">receipt_long</span>
+</div>
+<div>
+<span class="font-label-md text-on-surface block">Riwayat Pesanan Jajan Online</span>
+<span class="font-body-sm text-on-surface-variant text-[11px]">Lihat antrean &amp; tiket ambil jajan</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary group-hover:translate-x-0.5 transition-all text-[20px]">chevron_right</span>
+</a>
+<!-- Item: Notifikasi & Keamanan -->
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[19px]">security</span>
+</div>
+<div>
+<span class="font-label-md text-on-surface block">Keamanan PIN &amp; Notifikasi Saldo</span>
+<span class="font-body-sm text-on-surface-variant text-[11px]">PIN Kantin 6 Digit aktif</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary group-hover:translate-x-0.5 transition-all text-[20px]">chevron_right</span>
+</a>
+<!-- Item: FAQ & Kontak Kasir -->
+<a class="flex items-center justify-between p-3 rounded-xl hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[19px]">support_agent</span>
+</div>
+<div>
+<span class="font-label-md text-on-surface block">Bantuan Kasir Kantin IDN</span>
+<span class="font-body-sm text-on-surface-variant text-[11px]">Kartu tertelan, saldo macet &amp; FAQ</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary group-hover:translate-x-0.5 transition-all text-[20px]">chevron_right</span>
+</a>
+</div>
+<!-- Tombol Keluar Akun -->
+<div class="pt-2">
+<button class="w-full py-3 rounded-xl bg-error-container/60 hover:bg-error-container text-on-error-container font-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Keluar dari Akun Santri</span>
+</button>
+</div>
+</section>
+<!-- Interactive Modal: QR Bayar Kasir (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="modal-qr">
+<div class="bg-surface-container-lowest rounded-3xl p-6 w-full max-w-sm flex flex-col items-center text-center shadow-2xl relative animate-in fade-in duration-200">
+<button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center" id="btn-close-qr" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[28px]">qr_code_2</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Tunjukkan ke Kasir</h3>
+<p class="font-body-sm text-on-surface-variant mb-4">Kasir kantin akan memindai QR kartu santri Anda</p>
+<!-- Visual QR Placeholder SVG -->
+<div class="bg-white p-4 rounded-2xl shadow-inner border border-outline-variant/30 mb-3">
+<svg class="w-44 h-44 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR matrix decorative layout -->
+<rect fill="none" height="28" rx="4" stroke="currentColor" stroke-width="5" width="28" x="5" y="5"></rect>
+<rect fill="currentColor" height="14" width="14" x="12" y="12"></rect>
+<rect fill="none" height="28" rx="4" stroke="currentColor" stroke-width="5" width="28" x="67" y="5"></rect>
+<rect fill="currentColor" height="14" width="14" x="74" y="12"></rect>
+<rect fill="none" height="28" rx="4" stroke="currentColor" stroke-width="5" width="28" x="5" y="67"></rect>
+<rect fill="currentColor" height="14" width="14" x="12" y="74"></rect>
+<!-- Random data blocks -->
+<rect fill="currentColor" height="8" width="8" x="42" y="10"></rect>
+<rect fill="currentColor" height="8" width="8" x="52" y="20"></rect>
+<rect fill="currentColor" height="8" width="16" x="42" y="32"></rect>
+<rect fill="currentColor" height="10" width="10" x="15" y="42"></rect>
+<rect fill="currentColor" height="10" width="10" x="35" y="50"></rect>
+<rect fill="currentColor" height="6" width="15" x="55" y="42"></rect>
+<rect fill="currentColor" height="18" width="8" x="42" y="72"></rect>
+<rect fill="currentColor" height="8" width="14" x="55" y="62"></rect>
+<rect fill="currentColor" height="8" width="18" x="75" y="50"></rect>
+<rect fill="currentColor" height="15" width="15" x="75" y="75"></rect>
+</svg>
+</div>
+<div class="bg-surface-container-low px-4 py-2 rounded-xl mb-4 w-full">
+<p class="font-label-sm text-on-surface-variant text-[11px]">KODE DINAMIS KANTIN</p>
+<p class="font-label-lg font-mono text-primary font-bold">IDN-8849-4092</p>
+<p class="font-label-sm text-outline text-[10px]">Berganti otomatis dalam <span id="timer-qr">45</span>s</p>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md" id="btn-close-qr-bottom" type="button">
+        Selesai
+      </button>
+</div>
+</div>
+<!-- Interactive Modal: Atur Limit Harian (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="modal-limit">
+<div class="bg-surface-container-lowest rounded-3xl p-6 w-full max-w-sm flex flex-col shadow-2xl relative">
+<button class="absolute top-4 right-4 w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center" id="btn-close-limit" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[26px]">tune</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Batas Jajan Harian</h3>
+<p class="font-body-sm text-on-surface-variant mb-4">Atur agar santri tetap hemat &amp; terencana.</p>
+<div class="bg-surface-container-low p-4 rounded-2xl mb-4 text-center">
+<span class="font-label-sm text-on-surface-variant">Limit Saat Ini</span>
+<p class="font-headline-lg-mobile text-primary font-bold" id="display-limit-val">Rp 50.000</p>
+<span class="font-label-sm text-emerald-600 block mt-1">Sesuai anjuran asrama</span>
+</div>
+<div class="space-y-2 mb-6">
+<label class="font-label-sm text-on-surface-variant flex justify-between" for="limit-range">
+<span>Geser Limit:</span>
+<span class="font-bold text-on-surface" id="range-preview">Rp 50.000</span>
+</label>
+<input class="w-full accent-primary cursor-pointer" id="limit-range" max="100000" min="20000" step="5000" type="range" value="50000"/>
+<div class="flex justify-between font-label-sm text-outline text-[10px]">
+<span>Rp 20.000</span>
+<span>Rp 100.000</span>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-md font-semibold shadow-md" id="btn-save-limit" type="button">
+        Simpan Limit Harian
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Setup interactive tabs and actions
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Highlight active nominal chips
+    const nominalButtons = document.querySelectorAll('.nominal-btn');
+    const customNominalInput = document.getElementById('custom-nominal');
+
+    nominalButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        nominalButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'active');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+          const icon = b.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.classList.remove('text-on-primary');
+            icon.classList.add('text-outline-variant');
+          }
+        });
+
+        btn.classList.add('bg-primary', 'text-on-primary', 'active');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.classList.remove('text-outline-variant');
+          icon.classList.add('text-on-primary');
+        }
+
+        if (customNominalInput) {
+          customNominalInput.value = '';
+        }
+      });
+    });
+
+    if (customNominalInput) {
+      customNominalInput.addEventListener('input', () => {
+        if (customNominalInput.value.length > 0) {
+          nominalButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'active');
+            b.classList.add('bg-surface-container-low', 'text-on-surface');
+            const icon = b.querySelector('.material-symbols-outlined');
+            if (icon) {
+              icon.classList.remove('text-on-primary');
+              icon.classList.add('text-outline-variant');
+            }
+          });
+        }
+      });
+    }
+
+    // 2. Lock Card Toggle Action
+    const lockBtn = document.getElementById('btn-lock-card');
+    const lockIcon = document.getElementById('lock-icon');
+    const lockText = document.getElementById('lock-text');
+    let isLocked = false;
+
+    if (lockBtn) {
+      lockBtn.addEventListener('click', () => {
+        isLocked = !isLocked;
+        if (isLocked) {
+          lockIcon.textContent = 'lock';
+          lockIcon.parentElement.classList.remove('text-outline', 'bg-surface-container-high');
+          lockIcon.parentElement.classList.add('text-error', 'bg-error-container');
+          lockText.textContent = 'Terkunci';
+          alert('Kartu Santri telah DINONAKTIFKAN sementara untuk keamanan.');
+        } else {
+          lockIcon.textContent = 'lock_open';
+          lockIcon.parentElement.classList.remove('text-error', 'bg-error-container');
+          lockIcon.parentElement.classList.add('text-outline', 'bg-surface-container-high');
+          lockText.textContent = 'Kunci Kartu';
+          alert('Kartu Santri IDN telah diaktifkan kembali!');
+        }
+      });
+    }
+
+    // 3. Modal QR Kasir
+    const qrModal = document.getElementById('modal-qr');
+    const btnOpenQr = document.getElementById('btn-qr-modal');
+    const btnCloseQr = document.getElementById('btn-close-qr');
+    const btnCloseQrBottom = document.getElementById('btn-close-qr-bottom');
+
+    const toggleQr = (show) => {
+      if (qrModal) {
+        if (show) qrModal.classList.remove('hidden');
+        else qrModal.classList.add('hidden');
+      }
+    };
+
+    if (btnOpenQr) btnOpenQr.addEventListener('click', () => toggleQr(true));
+    if (btnCloseQr) btnCloseQr.addEventListener('click', () => toggleQr(false));
+    if (btnCloseQrBottom) btnCloseQrBottom.addEventListener('click', () => toggleQr(false));
+
+    // 4. Modal Limit Harian
+    const limitModal = document.getElementById('modal-limit');
+    const btnOpenLimit = document.getElementById('btn-limit-modal');
+    const btnCloseLimit = document.getElementById('btn-close-limit');
+    const btnSaveLimit = document.getElementById('btn-save-limit');
+    const rangeInput = document.getElementById('limit-range');
+    const rangePreview = document.getElementById('range-preview');
+    const displayLimitVal = document.getElementById('display-limit-val');
+
+    const toggleLimit = (show) => {
+      if (limitModal) {
+        if (show) limitModal.classList.remove('hidden');
+        else limitModal.classList.add('hidden');
+      }
+    };
+
+    if (btnOpenLimit) btnOpenLimit.addEventListener('click', () => toggleLimit(true));
+    if (btnCloseLimit) btnCloseLimit.addEventListener('click', () => toggleLimit(false));
+
+    if (rangeInput && rangePreview) {
+      rangeInput.addEventListener('input', (e) => {
+        const val = Number(e.target.value).toLocaleString('id-ID');
+        rangePreview.textContent = 'Rp ' + val;
+      });
+    }
+
+    if (btnSaveLimit && rangeInput && displayLimitVal) {
+      btnSaveLimit.addEventListener('click', () => {
+        const val = Number(rangeInput.value).toLocaleString('id-ID');
+        displayLimitVal.textContent = 'Rp ' + val;
+        toggleLimit(false);
+        alert('Batas belanja harian santri berhasil diubah menjadi Rp ' + val);
+      });
+    }
+
+    // 5. Submit Top Up notification
+    const btnSubmitTopup = document.getElementById('btn-submit-topup');
+    if (btnSubmitTopup) {
+      btnSubmitTopup.addEventListener('click', () => {
+        const selectedRadio = document.querySelector('input[name="pay_method"]:checked');
+        const method = selectedRadio ? selectedRadio.value : 'qris';
+        if (method === 'wali') {
+          alert('Permintaan top-up telah dikirim ke WhatsApp Wali Santri (Bapak Hendra W.)!');
+        } else {
+          alert('Membuka gerbang pembayaran QRIS / Virtual Account...');
+        }
+      });
+    }
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-2"><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="font-label-sm text-label-sm">Menu</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="pesanan" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">Pesanan</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Profil</span></a></div></nav></body></html>
