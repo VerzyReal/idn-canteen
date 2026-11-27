@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useAuthStore } from '@/store/authStore';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -53,7 +54,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary flex flex-col items-center justify-center px-5 py-10">
+    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary flex flex-col items-center justify-center px-5 py-10 relative">
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle className="shadow-md" />
+      </div>
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-7">

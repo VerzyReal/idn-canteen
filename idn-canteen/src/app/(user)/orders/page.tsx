@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useAuthStore } from '@/store/authStore';
 import { useCartStore } from '@/store/cartStore';
 import { OrderWithItems, ORDER_STATUS_LABEL, PAYMENT_METHOD_LABEL } from '@/types';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 type TabType = 'active' | 'history';
 
@@ -113,6 +114,7 @@ function OrdersContent() {
           </nav>
 
           <div className="flex items-center gap-space-sm shrink-0">
+            <ThemeToggle />
             <Link
               href="/checkout"
               className="relative p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center"
@@ -162,6 +164,7 @@ function OrdersContent() {
             <span className="font-headline-sm text-primary font-bold tracking-tight truncate">IDN</span>
           </div>
           <div className="flex items-center gap-1">
+            <ThemeToggle className="w-9 h-9" />
             <button
               type="button"
               onClick={fetchAllOrders}

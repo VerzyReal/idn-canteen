@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useAuthStore } from '@/store/authStore';
 import { useCartStore } from '@/store/cartStore';
 import { WalletTransactionWithMeta, TOPUP_DENOMINATIONS } from '@/types';
+import { ThemeToggle, ThemeSelector } from '@/components/ui/ThemeToggle';
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -154,6 +155,7 @@ export default function ProfilePage() {
           </nav>
 
           <div className="flex items-center gap-space-sm shrink-0">
+            <ThemeToggle />
             <Link
               href="/checkout"
               className="relative p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant transition-colors flex items-center justify-center"
@@ -194,6 +196,7 @@ export default function ProfilePage() {
             <span className="font-headline-sm text-primary font-bold tracking-tight truncate">IDN</span>
           </div>
           <div className="flex items-center gap-1">
+            <ThemeToggle className="w-9 h-9" />
             <Link href="/menu" className="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant">
               <span className="material-symbols-outlined text-[22px]">search</span>
             </Link>
@@ -379,17 +382,20 @@ export default function ProfilePage() {
                 </>
               )}
 
-              {/* Pengaturan & Tombol Keluar (Desktop) */}
-              <div className="hidden lg:block bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-2">
-                <h3 className="font-headline-sm text-on-surface font-bold mb-2">Pengaturan Akun</h3>
-                <button
-                  type="button"
-                  onClick={handleLogout}
-                  className="w-full py-3 rounded-xl bg-error-container/70 hover:bg-error-container text-on-error-container font-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors"
-                >
-                  <span className="material-symbols-outlined text-[18px]">logout</span>
-                  <span>Keluar dari Akun</span>
-                </button>
+              {/* Pengaturan Tema & Akun (Desktop & Mobile) */}
+              <div className="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm space-y-3">
+                <h3 className="font-headline-sm text-on-surface font-bold">Tema Tampilan</h3>
+                <ThemeSelector />
+                <div className="hidden lg:block pt-2">
+                  <button
+                    type="button"
+                    onClick={handleLogout}
+                    className="w-full py-3 rounded-xl bg-error-container/70 hover:bg-error-container text-on-error-container font-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors"
+                  >
+                    <span className="material-symbols-outlined text-[18px]">logout</span>
+                    <span>Keluar dari Akun</span>
+                  </button>
+                </div>
               </div>
             </div>
 

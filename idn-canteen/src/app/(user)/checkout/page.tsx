@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useCartStore } from '@/store/cartStore';
 import { useAuthStore } from '@/store/authStore';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 type PaymentOption = 'BALANCE' | 'QRIS' | 'CASH';
 
@@ -133,6 +134,7 @@ export default function CheckoutPage() {
           </nav>
 
           <div className="flex items-center gap-space-sm">
+            <ThemeToggle />
             {user ? (
               <Link href="/profile" className="flex items-center gap-space-sm pl-space-xs py-1 pr-space-sm rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors">
                 <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs uppercase">
@@ -165,6 +167,7 @@ export default function CheckoutPage() {
             <span className="font-headline-sm text-primary font-bold tracking-tight truncate">IDN</span>
           </div>
           <div className="flex items-center gap-1">
+            <ThemeToggle className="w-9 h-9" />
             <Link href="/menu" className="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface">
               <span className="material-symbols-outlined text-[22px]">search</span>
             </Link>

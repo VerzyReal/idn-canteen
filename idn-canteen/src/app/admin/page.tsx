@@ -12,6 +12,7 @@ import {
   ORDER_STATUS_LABEL,
   PAYMENT_METHOD_LABEL,
 } from '@/types';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 type AdminTab = 'overview' | 'orders' | 'products' | 'topup';
 
@@ -374,6 +375,7 @@ export default function AdminDashboardPage() {
           </div>
 
           <div className="flex items-center gap-space-sm md:gap-space-md">
+            <ThemeToggle />
             <button
               type="button"
               onClick={fetchAllAdminData}

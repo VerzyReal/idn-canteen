@@ -6,6 +6,7 @@ import { useAuthStore } from '@/store/authStore';
 import { useCartStore } from '@/store/cartStore';
 import { ProductWithMeta } from '@/types';
 import { ProductDetailModal } from '@/components/product/ProductDetailModal';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 type SortOption = 'default' | 'price-asc' | 'price-desc' | 'name-asc' | 'name-desc' | 'available';
 
@@ -188,6 +189,7 @@ export default function MenuPage() {
           </nav>
 
           <div className="flex items-center gap-space-sm shrink-0">
+            <ThemeToggle />
             <Link
               href="/checkout"
               className="relative p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center"
@@ -244,6 +246,7 @@ export default function MenuPage() {
             </span>
           </div>
           <div className="flex items-center gap-1">
+            <ThemeToggle className="w-9 h-9" />
             <Link
               href="/checkout"
               className="relative w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface transition-colors"

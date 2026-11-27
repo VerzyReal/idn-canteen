@@ -7,6 +7,7 @@ import { useAuthStore } from '@/store/authStore';
 import { useCartStore } from '@/store/cartStore';
 import { ProductWithMeta } from '@/types';
 import { ProductDetailModal } from '@/components/product/ProductDetailModal';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 
 export default function BerandaPage() {
   const { user } = useAuthStore();
@@ -155,6 +156,7 @@ export default function BerandaPage() {
 
           {/* User Profile & Cart Button */}
           <div className="flex items-center gap-space-sm shrink-0">
+            <ThemeToggle />
             {/* Cart Button */}
             <Link
               href="/checkout"
@@ -214,6 +216,7 @@ export default function BerandaPage() {
           </div>
 
           <div className="flex items-center gap-1">
+            <ThemeToggle className="w-9 h-9" />
             <Link
               href="/menu"
               className="w-10 h-10 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface"
